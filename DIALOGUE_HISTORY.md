@@ -15,3 +15,22 @@
 ### Protocolo Automático
 - **Requisito de Jhonny José:** El "protocolo automático" debe incluirse entre los archivos que se crearán para la documentación inicial de cada nuevo proyecto, de manera que siempre existan desde el principio.
 - **Próximos Pasos:** Una vez que el `DIALOGUE_HISTORY.md` esté creado y commiteado, se discutirán los detalles del "protocolo automático" y su implementación.
+
+### Plan de Acción para el Protocolo Automático de Documentación (Revisado y Simplificado)
+- **Filosofía:** Automatización y reutilización a través de plantillas maestras, donde la clave es identificar el "tipo de proyecto" para una adaptación mínima, sin necesidad de recurrir a los archivos manualmente.
+- **Objetivo:** Generar archivos de documentación con estructura ya definida, adaptándose al "tipo de proyecto".
+- **1. Identificación de Archivos Maestros:**
+    - `GIT_PROTOCOL.md`
+    - `INTELLECTUAL_PROPERTY.md`
+    - `README.md` (utilizando la versión más completa del proyecto "Optimización de Proyectos con IA").
+    - `GUI_DEVELOPMENT_NOTES.md` y `SESSION_CHECKPOINT_2025-07-24.md` se descartan por ser demasiado específicos.
+- **2. Creación de Plantillas Genéricas con Marcadores de Posición:**
+    - Para cada archivo maestro, se creará una versión "plantilla" con marcadores de posición para información variable (ej. `[NOMBRE_DEL_PROYECTO]`, `[TIPO_DE_PROYECTO]`, `[DESCRIPCION_BREVE_DEL_PROYECTO]`, `[STACK_TECNOLOGICO_PRINCIPAL]`, `[URL_REPOSITORIO_REMOTO]`, `[FECHA_CREACION_PROYECTO]`).
+    - La estructura y el rol de los colaboradores (Jhonny José y Gemini) se mantendrán constantes.
+- **3. Definición de la Estructura de Directorios para Nuevos Proyectos:**
+    - Se confirmará dónde se ubicarán estos archivos generados en un nuevo proyecto.
+- **4. Conceptualización del Generador (Simplificado):**
+    - Se describirá cómo un script simple podría tomar el "tipo de proyecto" y otros datos básicos para generar los archivos finales.
+
+### Compromiso de Registro Continuo
+- **Acuerdo:** Se mantendrá el archivo `DIALOGUE_HISTORY.md` actualizado de forma consistente con los diálogos, acuerdos y planes de acción para asegurar la persistencia de la información y evitar futuras pérdidas.
