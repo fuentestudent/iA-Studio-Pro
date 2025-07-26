@@ -1,1 +1,1 @@
-feat: Implement initial LLM API Gateway structure
+feat: Implement LLM API Gateway with gatewayController and gatewayRoutes

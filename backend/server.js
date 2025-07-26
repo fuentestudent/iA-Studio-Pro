@@ -2,11 +2,12 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const gatewayRoutes = require('./routes/gatewayRoutes'); // Import gatewayRoutes
+const authenticate = require('./middleware/authMiddleware'); // Import authMiddleware
 
 app.use(express.json());
 
-// Use the Gateway routes
-app.use('/api/gateway', gatewayRoutes);
+// Use the Gateway routes with authentication
+app.use('/api/gateway', authenticate, gatewayRoutes);
 
 app.get('/', (req, res) => {
   res.send('API Gateway para Optimización de Proyectos con IA');
