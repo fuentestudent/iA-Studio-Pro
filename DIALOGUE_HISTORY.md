@@ -1,2 +1,4 @@
-- **Acción:** Se ha creado `authMiddleware.js` en `C:/www/Optimización de Proyectos con IA/backend/middleware/` para simular la autenticación.
-- **Acción:** Se ha modificado `server.js` para importar y aplicar `authMiddleware` a las rutas del gateway (`/api/gateway`).
+- **Acción:** Se han creado los archivos `server.js`, `.env` y `Dockerfile` en `C:/www/Optimización de Proyectos con IA/backend/`.
+- **Acción:** Se ha creado `controllers/llmController.js` con un placeholder para el procesamiento de solicitudes LLM.
+- **Acción:** Se ha creado `routes/llmRoutes.js` para definir el endpoint `/api/llm/process`.
+- **Acción:** Se ha integrado `llmRoutes` en `server.js` para manejar las solicitudes a los LLM.
