@@ -1,12 +1,12 @@
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
-const llmRoutes = require('./routes/llmRoutes'); // Import llmRoutes
+const gatewayRoutes = require('./routes/gatewayRoutes'); // Import gatewayRoutes
 
 app.use(express.json());
 
-// Use the LLM routes
-app.use('/api/llm', llmRoutes);
+// Use the Gateway routes
+app.use('/api/gateway', gatewayRoutes);
 
 app.get('/', (req, res) => {
   res.send('API Gateway para Optimización de Proyectos con IA');
