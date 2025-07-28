@@ -1,0 +1,27 @@
+{
+  "dashboard": {
+    "title": "Panel de Control",
+    "activeProjects": "Proyectos Activos",
+    "availableAIModels": "Modelos de IA Disponibles",
+    "apiUsage": "Uso de API (Últimas 24h)",
+    "codeEditor": "Editor de Código",
+    "optimizePrompt": "Optimizar Prompt",
+    "optimizationResult": "Resultado de Optimización",
+    "createNewProject": "Crear Nuevo Proyecto",
+    "projectName": "Nombre del Proyecto",
+    "description": "Descripción",
+    "createProject": "Crear Proyecto",
+    "myProjects": "Mis Proyectos",
+    "noProjectsYet": "No hay proyectos aún. ¡Crea uno!",
+    "promptSentForOptimization": "¡Prompt enviado para optimización! Revisa la sección de resultados.",
+    "promptOptimizedSuccessfully": "¡Prompt optimizado exitosamente! Revisa la sección de resultados.",
+    "errorOptimizingPrompt": "Error al optimizar el prompt. Revisa la consola.",
+    "errorFetchingProjects": "Error al obtener proyectos. Revisa la consola.",
+    "errorCreatingProject": "Error al crear el proyecto. Revisa la consola.",
+    "fillAllFields": "Por favor, completa el nombre y la descripción del proyecto."
+  },
+  "common": {
+    "platformName": "INTEGRADA",
+    "platformSubtitle": "Plataforma de Optimización de Proyectos de IA"
+  }
+}

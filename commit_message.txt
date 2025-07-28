@@ -1,8 +1,1 @@
-feat: Integración inicial de LLM y desarrollo de frontend
-
-Se implementa la infraestructura inicial para la interacción con un Modelo de Lenguaje Grande (LLM) y se comienza el desarrollo de la interfaz de usuario.
-
-- Se definen las rutas y controladores del backend para la comunicación con el LLM.
-- Se establece la configuración principal del servidor.
-- Se inicia la estructura del frontend para la interacción con el usuario.
-- Se actualiza el historial de diálogo para reflejar el progreso.
+docs: Actualizar README.md con descripción detallada del proyecto y desempeño técnico

@@ -1,0 +1,27 @@
+{
+  "dashboard": {
+    "title": "Dashboard",
+    "activeProjects": "Active Projects",
+    "availableAIModels": "Available AI Models",
+    "apiUsage": "API Usage (Last 24h)",
+    "codeEditor": "Code Editor",
+    "optimizePrompt": "Optimize Prompt",
+    "optimizationResult": "Optimization Result",
+    "createNewProject": "Create New Project",
+    "projectName": "Project Name",
+    "description": "Description",
+    "createProject": "Create Project",
+    "myProjects": "My Projects",
+    "noProjectsYet": "No projects yet. Create one!",
+    "promptSentForOptimization": "Prompt sent for optimization! Check the result section.",
+    "promptOptimizedSuccessfully": "Prompt optimized successfully! Check the result section.",
+    "errorOptimizingPrompt": "Error optimizing prompt. Please check console.",
+    "errorFetchingProjects": "Error fetching projects. Please check console.",
+    "errorCreatingProject": "Error creating project. Please check console.",
+    "fillAllFields": "Please fill in both project name and description."
+  },
+  "common": {
+    "platformName": "INTEGRATED",
+    "platformSubtitle": "AI Project Optimization Platform"
+  }
+}

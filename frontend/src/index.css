@@ -1,3 +1,70 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-primary-dark: #121212;
+  --color-primary-light: #f8f8f8;
+  --color-accent: #4ecdc4;
+  --color-neutral-dark: #333333;
+  --color-neutral-light: #e0e0e0;
+}
+
+/* Light Theme (Default) */
+body {
+  background-color: var(--color-primary-light);
+  color: var(--color-neutral-dark);
+}
+
+/* Dark Theme */
+.dark {
+  --color-primary-dark: #121212;
+  --color-primary-light: #f8f8f8;
+  --color-accent: #4ecdc4;
+  --color-neutral-dark: #e0e0e0;
+  --color-neutral-light: #333333;
+
+  background-color: var(--color-primary-dark);
+  color: var(--color-neutral-dark);
+}
+
+/* General styles using CSS variables */
+.text-accent {
+  color: var(--color-accent);
+}
+
+.bg-accent {
+  background-color: var(--color-accent);
+}
+
+.bg-primary-dark {
+  background-color: var(--color-primary-dark);
+}
+
+.text-primary-dark {
+  color: var(--color-primary-dark);
+}
+
+.bg-primary-light {
+  background-color: var(--color-primary-light);
+}
+
+.text-primary-light {
+  color: var(--color-primary-light);
+}
+
+.bg-neutral-dark {
+  background-color: var(--color-neutral-dark);
+}
+
+.text-neutral-dark {
+  color: var(--color-neutral-dark);
+}
+
+.bg-neutral-light {
+  background-color: var(--color-neutral-light);
+}
+
+.text-neutral-light {
+  color: var(--color-neutral-light);
+}
