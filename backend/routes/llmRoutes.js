@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const llmController = require('../controllers/llmController');
+const { processLLMRequest } = require('../controllers/llmGatewayController'); // Importar el controlador correcto
 
-router.post('/process', llmController.processLLMRequest);
+router.post('/process', processLLMRequest); // La ruta ya está definida, solo aseguro el controlador
 
 module.exports = router;
