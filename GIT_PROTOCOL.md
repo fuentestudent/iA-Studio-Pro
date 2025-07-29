@@ -1,6 +1,6 @@
 # Protocolo y Guía Práctica de Git para el Proyecto "Optimización de Proyectos con IA"
 
-Este documento establece las directrices y mejores prácticas para el uso de Git en el proyecto "Optimización de Proyectos con IA", asegurando un flujo de trabajo colaborativo, eficiente y con un historial de versiones claro y consistente.
+Este documento establece las directrices y mejores prácticas para el uso de Git en el proyecto "Optimización de Proyectos con IA", asegurando un flujo de trabajo colaborativo, eficiente y con un historial de versiones claro y consistente. **Este protocolo sirve como una guía paralela y precisa para la gestión de repositorios locales y remotos, complementando la documentación de las fases de desarrollo del proyecto.**
 
 ## 1. Configuración Inicial de Git
 
@@ -64,6 +64,12 @@ git commit -m "feat: Descripción concisa de la nueva funcionalidad"
 *   Comienza con un prefijo que indique el tipo de cambio (`feat`, `fix`, `docs`, `chore`, `refactor`, `style`, `test`, etc.).
 *   La primera línea debe ser un resumen de no más de 50-72 caracteres.
 *   Si es necesario, añade un cuerpo más detallado después de una línea en blanco.
+*   **Importante:** Si el mensaje de commit contiene caracteres especiales o espacios que puedan ser interpretados erróneamente por el shell, utiliza la opción `-F` con un archivo temporal:
+    ```bash
+    echo "docs: Mensaje de commit con espacios y caracteres especiales" > commit_message.txt
+    git commit -F commit_message.txt
+    rm commit_message.txt
+    ```
 
 ### 2.5. Subir tus Cambios a la Rama Remota
 
@@ -77,7 +83,16 @@ git push origin nombre-de-tu-rama
 
 Cuando tu funcionalidad o corrección esté lista para ser revisada e integrada en la rama principal, abre una Pull Request en la plataforma Git (GitHub, GitLab, Bitbucket, etc.).
 
-## 3. Resolución de Conflictos
+## 3. Verificación del Estado del Repositorio
+
+Para mantener un control preciso del estado de tu repositorio, utiliza los siguientes comandos regularmente:
+
+*   `git status`: Muestra el estado del árbol de trabajo y el área de preparación. Te indicará qué archivos han sido modificados, cuáles están en el área de preparación y cuáles no están siendo rastreados.
+*   `git log --oneline -n <cantidad>`: Muestra un historial conciso de los últimos commits. Útil para recordar los cambios recientes y sus mensajes.
+*   `git diff HEAD`: Muestra los cambios (incluyendo los no preparados) en los archivos rastreados desde el último commit.
+*   `git diff --staged`: Muestra solo los cambios que están en el área de preparación.
+
+## 4. Resolución de Conflictos
 
 Si al hacer `git pull` o al intentar fusionar tu rama, Git detecta conflictos, deberás resolverlos manualmente. Git marcará los archivos con conflictos. Edita los archivos para elegir las versiones correctas y luego:
 
@@ -86,7 +101,7 @@ git add archivo_con_conflicto
 git commit -m "fix: Resolver conflictos de fusión"
 ```
 
-## 4. Convenciones de Nomenclatura
+## 5. Convenciones de Nomenclatura
 
 *   **Ramas:** Utiliza nombres descriptivos y en minúsculas, separados por guiones. Prefijos comunes:
     *   `feature/`: Para nuevas funcionalidades.
@@ -96,21 +111,21 @@ git commit -m "fix: Resolver conflictos de fusión"
     *   `chore/`: Para tareas de mantenimiento que no afectan el código de producción.
 *   **Tags:** Utiliza tags para marcar versiones importantes (e.g., `v1.0.0`, `v1.0.1`).
 
-## 5. Ignorar Archivos
+## 6. Ignorar Archivos
 
 Utiliza el archivo `.gitignore` para especificar archivos y directorios que Git debe ignorar (e.g., archivos de configuración local, dependencias de módulos, archivos temporales, logs). Asegúrate de que los archivos sensibles o generados automáticamente no se suban al repositorio.
 
-## 6. Seguridad en Git
+## 7. Seguridad en Git
 
 *   **Nunca subas credenciales o información sensible** directamente al repositorio. Utiliza variables de entorno o sistemas de gestión de secretos.
 *   Revisa los cambios antes de hacer commit y push.
 *   Utiliza SSH para la autenticación con el repositorio remoto cuando sea posible.
 
-## 7. Herramientas Adicionales
+## 8. Herramientas Adicionales
 
 *   **Visual Studio Code:** Utiliza las extensiones de Git para una mejor experiencia de usuario.
 *   **Git LFS:** Para manejar archivos grandes (si es necesario).
 
 ---
 
-Este protocolo es un documento vivo y puede ser actualizado a medida que el proyecto evolucione. La colaboración y el seguimiento de estas directrices son clave para el éxito del proyecto.
+**Este protocolo es un documento vivo y será actualizado a medida que el proyecto evolucione y surjan nuevas necesidades o mejores prácticas en la gestión de versiones.** La colaboración y el seguimiento de estas directrices son clave para el éxito del proyecto. La colaboración y el seguimiento de estas directrices son clave para el éxito del proyecto.
