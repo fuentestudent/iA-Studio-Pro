@@ -22,11 +22,10 @@ const optimizationRoutes = require('./routes/optimizationRoutes'); // Importar l
 app.use('/api/projects', projectRoutes); // Usar las rutas de proyectos
 app.use('/api/optimize', optimizationRoutes); // Usar las rutas de optimización
 
-// Middleware para manejar errores (debe ir al final de las rutas)
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).send('Something broke!');
-});
+const { notFound, errorHandler } = require('./middleware/errorMiddleware');
+
+app.use(notFound);
+app.use(errorHandler);
 
 if (require.main === module) {
   connectDB();

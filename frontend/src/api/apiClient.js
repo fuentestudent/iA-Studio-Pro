@@ -1,26 +1,32 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:3000/api'; // Base URL for your backend API
+const API_URL = '/api'; // Proxy will handle the full URL
 
 const apiClient = axios.create({
-  baseURL: API_BASE_URL,
-  headers: {
-    'Content-Type': 'application/json',
-  },
+  baseURL: API_URL,
 });
 
-// Interceptor para añadir el token de autenticación a las solicitudes
-apiClient.interceptors.request.use(
-  (config) => {
-    const user = JSON.parse(localStorage.getItem('userInfo'));
-    if (user && user.token) {
-      config.headers.Authorization = `Bearer ${user.token}`;
-    }
-    return config;
-  },
-  (error) => {
-    return Promise.reject(error);
+// Interceptor to add the auth token to every request
+apiClient.interceptors.request.use((config) => {
+  const userInfo = JSON.parse(localStorage.getItem('userInfo'));
+  if (userInfo && userInfo.token) {
+    config.headers.Authorization = `Bearer ${userInfo.token}`;
   }
-);
+  return config;
+});
+
+// Auth endpoints
+export const registerUser = (userData) => apiClient.post('/users', userData);
+export const loginUser = (userData) => apiClient.post('/users/login', userData);
+
+// Project endpoints
+export const getProjects = () => apiClient.get('/projects');
+export const createProject = (projectData) => apiClient.post('/projects', projectData);
+export const getProjectById = (id) => apiClient.get(`/projects/${id}`);
+export const updateProject = (id, projectData) => apiClient.put(`/projects/${id}`, projectData);
+export const deleteProject = (id) => apiClient.delete(`/projects/${id}`);
+
+// LLM Gateway endpoints (placeholder)
+export const optimizePrompt = (promptData) => apiClient.post('/llm/optimize', promptData);
 
 export default apiClient;

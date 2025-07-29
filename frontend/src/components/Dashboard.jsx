@@ -1,52 +1,37 @@
 import React, { useState, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
-import { BarChart, LineChart, PieChart, Moon, Sun } from 'lucide-react';
+import { LineChart, Moon, Sun } from 'lucide-react';
 import CodeEditor from './CodeEditor';
-import projectApi from '../api/projectApi';
-import llmApi from '../api/llmApi';
+import * as apiClient from '../api/apiClient';
+import { useAuth } from '../context/AuthContext';
 import { useTheme } from '../context/ThemeContext';
-import { useTranslation } from 'react-i18next'; // Import useTranslation
+import { useTranslation } from 'react-i18next';
 
 const Dashboard = () => {
-  const { t, i18n } = useTranslation(); // Initialize useTranslation
+  const { t, i18n } = useTranslation();
+  const { user, logoutUser } = useAuth();
   const [projects, setProjects] = useState([]);
   const [newProjectName, setNewProjectName] = useState('');
   const [newProjectDescription, setNewProjectDescription] = useState('');
-  const [optimizedPromptResult, setOptimizedPromptResult] = useState(null);
   const [isLoadingProjects, setIsLoadingProjects] = useState(false);
-  const [isOptimizingPrompt, setIsOptimizingPrompt] = useState(false);
   const [isCreatingProject, setIsCreatingProject] = useState(false);
   const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
-    fetchProjects();
-  }, []);
+    if (user) {
+      fetchProjects();
+    }
+  }, [user]);
 
   const fetchProjects = async () => {
     setIsLoadingProjects(true);
     try {
-      const data = await projectApi.getProjects();
+      const { data } = await apiClient.getProjects();
       setProjects(data);
     } catch (error) {
       console.error(t('dashboard.errorFetchingProjects'), error);
-      alert(t('dashboard.errorFetchingProjects'));
     } finally {
       setIsLoadingProjects(false);
-    }
-  };
-
-  const handleOptimizePrompt = async (prompt) => {
-    setIsOptimizingPrompt(true);
-    console.log(t('dashboard.optimizingPrompt'), prompt);
-    try {
-      const result = await llmApi.optimizePrompt(prompt);
-      setOptimizedPromptResult(result.data.finalOptimizedPrompt);
-      alert(t('dashboard.promptOptimizedSuccessfully'));
-    } catch (error) {
-      console.error(t('dashboard.errorOptimizingPrompt'), error);
-      alert(t('dashboard.errorOptimizingPrompt'));
-    } finally {
-      setIsOptimizingPrompt(false);
     }
   };
 
@@ -55,22 +40,18 @@ const Dashboard = () => {
     if (newProjectName && newProjectDescription) {
       setIsCreatingProject(true);
       try {
-        const newProject = await projectApi.createProject({
+        const { data } = await apiClient.createProject({
           name: newProjectName,
           description: newProjectDescription,
         });
-        setProjects([...projects, newProject]);
+        setProjects([...projects, data]);
         setNewProjectName('');
         setNewProjectDescription('');
-        alert(t('dashboard.projectCreatedSuccessfully'));
       } catch (error) {
         console.error(t('dashboard.errorCreatingProject'), error);
-        alert(t('dashboard.errorCreatingProject'));
       } finally {
         setIsCreatingProject(false);
       }
-    } else {
-      alert(t('dashboard.fillAllFields'));
     }
   };
 
@@ -119,7 +100,7 @@ const Dashboard = () => {
               <Sun />
             )}
           </button>
-          <p className="text-right text-lg font-medium text-gray-600 mt-2 md:mt-0 md:ml-4">{t('common.platformSubtitle')}</p>
+          <button onClick={logoutUser} className="ml-4 bg-red-500 text-white py-2 px-4 rounded-lg">Logout</button>
         </div>
       </header>
       <h1 className="text-2xl font-bold mb-4">{t('dashboard.title')}</h1>
@@ -152,22 +133,8 @@ const Dashboard = () => {
 
       {/* Code Editor Section */}
       <div className="mb-4">
-        <CodeEditor onOptimize={handleOptimizePrompt} isOptimizing={isOptimizingPrompt} />
+        <CodeEditor onOptimize={() => {}} isOptimizing={false} />
       </div>
-
-      {/* Optimized Prompt Result Section */}
-      {optimizedPromptResult && (
-        <div className="mb-4">
-          <Card className="bg-white rounded-lg shadow-md">
-            <CardHeader>
-              <CardTitle className="text-gray-700">{t('dashboard.optimizationResult')}</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="bg-gray-50 p-3 rounded-md text-sm text-gray-800">{optimizedPromptResult}</p>
-            </CardContent>
-          </Card>
-        </div>
-      )}
 
       {/* Project Management Section */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
