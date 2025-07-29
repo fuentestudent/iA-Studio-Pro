@@ -6,10 +6,7 @@ const authRoutes = require('./routes/authRoutes'); // Importar las rutas de aute
 
 dotenv.config({ path: './.env' });
 
-connectDB();
-
 const app = express();
-const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
@@ -31,6 +28,12 @@ app.use((err, req, res, next) => {
   res.status(500).send('Something broke!');
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+if (require.main === module) {
+  connectDB();
+  const PORT = process.env.PORT || 3000;
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
+}
+
+module.exports = app;
