@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const CodeEditor = ({ onOptimize }) => {
+const CodeEditor = ({ onOptimize, isOptimizing }) => {
   const [code, setCode] = useState('Escribe tu prompt o código aquí...');
 
   const handleChange = (e) => {
@@ -20,8 +20,9 @@ const CodeEditor = ({ onOptimize }) => {
         <button
           onClick={handleOptimize}
           className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md transition duration-300"
+          disabled={isOptimizing}
         >
-          Optimizar Prompt
+          {isOptimizing ? 'Optimizando...' : 'Optimizar Prompt'}
         </button>
       </div>
       <textarea

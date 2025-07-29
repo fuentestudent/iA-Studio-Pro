@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
-import { BarChart, LineChart, PieChart } from 'lucide-react';
+import { BarChart, LineChart, PieChart, Moon, Sun } from 'lucide-react';
 import CodeEditor from './CodeEditor';
 import projectApi from '../api/projectApi';
 import llmApi from '../api/llmApi';
@@ -13,6 +13,9 @@ const Dashboard = () => {
   const [newProjectName, setNewProjectName] = useState('');
   const [newProjectDescription, setNewProjectDescription] = useState('');
   const [optimizedPromptResult, setOptimizedPromptResult] = useState(null);
+  const [isLoadingProjects, setIsLoadingProjects] = useState(false);
+  const [isOptimizingPrompt, setIsOptimizingPrompt] = useState(false);
+  const [isCreatingProject, setIsCreatingProject] = useState(false);
   const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
@@ -20,16 +23,20 @@ const Dashboard = () => {
   }, []);
 
   const fetchProjects = async () => {
+    setIsLoadingProjects(true);
     try {
       const data = await projectApi.getProjects();
       setProjects(data);
     } catch (error) {
       console.error(t('dashboard.errorFetchingProjects'), error);
       alert(t('dashboard.errorFetchingProjects'));
+    } finally {
+      setIsLoadingProjects(false);
     }
   };
 
   const handleOptimizePrompt = async (prompt) => {
+    setIsOptimizingPrompt(true);
     console.log(t('dashboard.optimizingPrompt'), prompt);
     try {
       const result = await llmApi.optimizePrompt(prompt);
@@ -38,12 +45,15 @@ const Dashboard = () => {
     } catch (error) {
       console.error(t('dashboard.errorOptimizingPrompt'), error);
       alert(t('dashboard.errorOptimizingPrompt'));
+    } finally {
+      setIsOptimizingPrompt(false);
     }
   };
 
   const handleCreateProject = async (e) => {
     e.preventDefault();
     if (newProjectName && newProjectDescription) {
+      setIsCreatingProject(true);
       try {
         const newProject = await projectApi.createProject({
           name: newProjectName,
@@ -56,6 +66,8 @@ const Dashboard = () => {
       } catch (error) {
         console.error(t('dashboard.errorCreatingProject'), error);
         alert(t('dashboard.errorCreatingProject'));
+      } finally {
+        setIsCreatingProject(false);
       }
     } else {
       alert(t('dashboard.fillAllFields'));
@@ -69,7 +81,7 @@ const Dashboard = () => {
   return (
     <div className="p-4 bg-gray-100 min-h-screen">
       {/* Header */}
-      <header className="flex items-center justify-between mb-8">
+      <header className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
         <div className="flex items-center">
           {/* INTEGRADA Logo Icon */}
           <div className="bg-[#4ecdc4] p-2 rounded-md mr-3">
@@ -87,26 +99,26 @@ const Dashboard = () => {
           </div>
           <h1 className="text-3xl font-bold text-gray-800">{t('common.platformName')}</h1>
         </div>
-        <div className="flex items-center">
+        <div className="flex flex-col items-end md:flex-row md:items-center">
           {/* Language Toggle */}
           <button
             onClick={() => changeLanguage(i18n.language === 'es' ? 'en' : 'es')}
-            className="p-2 rounded-md bg-gray-200 text-gray-700 hover:bg-gray-300 transition duration-300 mr-2"
+            className="p-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition duration-300 mr-2 focus:outline-none focus:ring-2 focus:ring-[#4ecdc4]"
           >
             {i18n.language === 'es' ? 'EN' : 'ES'}
           </button>
           {/* Theme Toggle */}
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-md bg-gray-200 text-gray-700 hover:bg-gray-300 transition duration-300"
+            className="p-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#4ecdc4]"
           >
             {theme === 'light' ? (
-              <i className="fas fa-moon"></i>
+              <Moon />
             ) : (
-              <i className="fas fa-sun"></i>
+              <Sun />
             )}
           </button>
-          <p className="text-right text-lg font-medium text-gray-600 ml-4">{t('common.platformSubtitle')}</p>
+          <p className="text-right text-lg font-medium text-gray-600 mt-2 md:mt-0 md:ml-4">{t('common.platformSubtitle')}</p>
         </div>
       </header>
       <h1 className="text-2xl font-bold mb-4">{t('dashboard.title')}</h1>
@@ -139,7 +151,7 @@ const Dashboard = () => {
 
       {/* Code Editor Section */}
       <div className="mb-4">
-        <CodeEditor onOptimize={handleOptimizePrompt} />
+        <CodeEditor onOptimize={handleOptimizePrompt} isOptimizing={isOptimizingPrompt} />
       </div>
 
       {/* Optimized Prompt Result Section */}
@@ -171,7 +183,7 @@ const Dashboard = () => {
                 <input
                   type="text"
                   id="projectName"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#4ecdc4] focus:ring-[#4ecdc4] sm:text-sm p-2 text-gray-900"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#4ecdc4] focus:ring-2 focus:ring-offset-2 focus:ring-[#4ecdc4] sm:text-sm p-2 text-gray-900"
                   value={newProjectName}
                   onChange={(e) => setNewProjectName(e.target.value)}
                   required
@@ -184,7 +196,7 @@ const Dashboard = () => {
                 <textarea
                   id="projectDescription"
                   rows="3"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#4ecdc4] focus:ring-[#4ecdc4] sm:text-sm p-2 text-gray-900"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#4ecdc4] focus:ring-2 focus:ring-offset-2 focus:ring-[#4ecdc4] sm:text-sm p-2 text-gray-900"
                   value={newProjectDescription}
                   onChange={(e) => setNewProjectDescription(e.target.value)}
                   required
@@ -192,9 +204,10 @@ const Dashboard = () => {
               </div>
               <button
                 type="submit"
-                className="bg-[#4ecdc4] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md transition duration-300"
+                className="bg-[#4ecdc4] hover:bg-[#3aa79f] text-white font-bold py-2 px-4 rounded-md transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#4ecdc4] focus:ring-offset-2"
+                disabled={isCreatingProject}
               >
-                {t('dashboard.createProject')}
+                {isCreatingProject ? t('dashboard.creatingProject') : t('dashboard.createProject')}
               </button>
             </form>
           </CardContent>
@@ -205,20 +218,24 @@ const Dashboard = () => {
             <CardTitle className="text-gray-700">{t('dashboard.myProjects')}</CardTitle>
           </CardHeader>
           <CardContent>
-            {projects.length === 0 ? (
+            {isLoadingProjects ? (
+              <p className="text-gray-600">{t('common.loadingProjects')}</p>
+            ) : projects.length === 0 ? (
               <p className="text-gray-600">{t('dashboard.noProjectsYet')}</p>
             ) : (
               <ul className="space-y-3">
                 {projects.map((project) => (
-                  <li key={project._id} className="bg-gray-50 p-3 rounded-md shadow-sm border border-gray-200">
-                    <h4 className="text-md font-semibold text-gray-800">{project.name}</h4>
-                    <p className="text-sm text-gray-600">{project.description}</p>
-                    <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
-                        project.status === 'Active' ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800'
-                      }`}>
-                      {project.status}
-                    </span>
-                  </li>
+                  <Card key={project._id} className="bg-gray-50 shadow-sm border border-gray-200">
+                    <CardContent className="p-3">
+                      <h4 className="text-md font-semibold text-gray-800">{project.name}</h4>
+                      <p className="text-sm text-gray-600">{project.description}</p>
+                      <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
+                          project.status === 'Active' ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800'
+                        }`}>
+                        {project.status}
+                      </span>
+                    </CardContent>
+                  </Card>
                 ))}
               </ul>
             )}

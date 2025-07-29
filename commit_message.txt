@@ -1,1 +1,0 @@
-docs: Actualizar README.md con descripción detallada del proyecto y desempeño técnico
