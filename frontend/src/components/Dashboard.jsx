@@ -111,6 +111,7 @@ const Dashboard = () => {
           <button
             onClick={toggleTheme}
             className="p-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#4ecdc4]"
+            data-testid="theme-toggle-button"
           >
             {theme === 'light' ? (
               <Moon />
