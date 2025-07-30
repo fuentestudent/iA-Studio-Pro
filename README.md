@@ -11,7 +11,7 @@ Desde la conceptualización de ideas hasta el despliegue, INTEGRADA proporciona 
 ## Características Principales
 
 *   **🤖 Integración Multi-LLM:** Conéctate y gestiona de forma centralizada múltiples modelos de IA como Gemini, ChatGPT, Claude y otros, a través de un gateway de API unificado. Esto permite una flexibilidad sin precedentes y optimiza el uso de recursos.
-*   **✨ Optimización de Prompts 4-D:** Nuestra metodología exclusiva (Analizar, Diagnosticar, Desarrollar, Entregar) guía a los usuarios a través de un proceso estructurado para crear prompts más efectivos, obteniendo resultados de mayor calidad y precisión de los LLM.
+*   **✨ Optimización de proyectos mediante Prompts en 4-D:** Nuestra metodología exclusiva (Analizar, Diagnosticar, Desarrollar, Entregar) guía a los usuarios a través de un proceso estructurado para crear prompts más efectivos, obteniendo resultados de mayor calidad y precisión de los LLM.
 *   **🧠 Agentes de IA Especializados:** Accede a módulos de IA pre-configurados y personalizables para dominios específicos, como la creación de marca personal o el desarrollo de aplicaciones móviles.
 *   **📊 Gestión de Proyectos y Seguimiento:** Organiza, sigue y gestiona el ciclo de vida completo de tus proyectos desde la IA con herramientas visuales e intuitivas, incluyendo seguimiento de progreso, asignación de tareas y colaboración en equipo.
 *   **📄 Generación Automática de Documentación:** Crea automáticamente la documentación técnica y de usuario necesaria para cada proyecto, ahorrando tiempo y esfuerzo, asegurando además la consistencia y mantenibilidad.
