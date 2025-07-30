@@ -66,3 +66,12 @@ Este documento registra las interacciones clave, decisiones y progreso del proye
     - Se identificó que el archivo `.env` del backend no contenía la `MONGODB_URI` y `JWT_SECRET`.
     - Se intentó solucionar el error `retryWrites must be either "true" or "false"` modificando `db.js` para establecer `retryWrites: true` directamente en las opciones de conexión de Mongoose y eliminando el parámetro de la URI en `.env`.
 - **Estado Actual:** Se ha completado la auditoría de errores. Los problemas de `start_app.bat` y `retryWrites` están pendientes de confirmación de resolución. El backend aún no inicia correctamente debido a problemas con la conexión a MongoDB.
+
+### 29 de julio de 2025 - Directriz de Seguridad: Documentación Interna de Datos Sensibles
+
+- **Objetivo:** Establecer una directriz clara para la documentación interna de datos sensibles y la prohibición de su exposición en repositorios remotos.
+- **Acciones Realizadas:**
+    - Se actualizó `GIT_PROTOCOL.md` para incluir una sección explícita sobre la prohibición de exponer información sensible (credenciales, detalles de procesos internos, metodologías propietarias) en repositorios remotos.
+    - Se actualizó `REPORTING_PROTOCOL.md` para reforzar la directriz de que los informes que contengan información sensible deben ser tratados como documentos internos y no deben ser subidos a repositorios remotos públicos.
+    - Se revisó la documentación existente para asegurar que no haya detalles sensibles expuestos inadvertidamente.
+- **Estado Actual:** Se ha implementado una directriz de seguridad robusta para el manejo de datos sensibles en la documentación y los repositorios.
