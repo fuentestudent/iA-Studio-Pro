@@ -40,24 +40,6 @@ Para más detalles sobre la propiedad intelectual y los roles, consulta el archi
 
 Actualmente, el proyecto ha completado la **Fase 1: Cimientos** y ha avanzado significativamente en la **Fase 2: Funcionalidad Core**. Hemos establecido una base sólida para el backend y el frontend, y hemos implementado los componentes clave para el Gateway de API de LLMs, el Sistema de Optimización 4-D y el Editor de Código Integrado.
 
-## Cómo Iniciar la Aplicación
-
-Para iniciar la aplicación INTEGRADA (backend y frontend) en un solo paso, sigue estas instrucciones:
-
-1.  **Configurar Variables de Entorno del Backend:**
-    *   Crea un archivo `.env` en el directorio `backend` (`C:\www\Optimización de Proyectos con IA\backend\.env`).
-    *   Añade las siguientes variables a ese archivo, reemplazando los placeholders con tus credenciales reales:
-        ```
-        MONGODB_URI="mongodb+srv://<usuario>:<contraseña>@cluster0.hxltzpx.mongodb.net/integrada_db?retryWrites=true&w=majority&appName=Cluster0"
-        JWT_SECRET="tu_secreto_jwt_aqui"
-        ```
-    *   **¡Importante!** Nunca subas este archivo `.env` a tu repositorio Git, ya que contiene información sensible.
-
-2.  **Ejecutar el Script de Inicio:**
-    *   Haz doble clic en `start_app.bat` ubicado en la raíz del proyecto (`C:\www\Optimización de Proyectos con IA\start_app.bat`) o ejecútalo desde la línea de comandos.
-
-Esto abrirá dos nuevas ventanas de terminal: una para el backend (Node.js) y otra para el frontend (Vite). El backend se ejecutará en `http://localhost:3000` y el frontend en `http://localhost:5173` (o el puerto que Vite asigne).
-
 ## Contacto
 
 Para cualquier consulta o sugerencia, no dudes en ponerte en contacto.
