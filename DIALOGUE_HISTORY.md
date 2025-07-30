@@ -27,3 +27,10 @@ Este documento registra las interacciones clave, decisiones y progreso del proye
     - Se guardó el informe completo del proyecto en ambos formatos (`.md` y `.txt`).
     - Se creó el archivo `REPORTING_PROTOCOL.md` para documentar este nuevo procedimiento de informes.
 - **Estado Actual:** La aplicación puede iniciarse de forma simplificada. Se ha establecido un sistema robusto para la documentación de informes y se han actualizado los archivos de protocolo relevantes.
+
+### 29 de julio de 2025 - Resolución de Problemas de Inicio y Actualización de Contacto
+
+- **Problema Identificado:** El archivo `start_app.bat` no funcionaba correctamente debido a problemas de interpretación de caracteres y comentarios en el script.
+- **Solución Implementada:** Se sobrescribió `start_app.bat` con una versión simplificada y sin comentarios, lo que resolvió el problema de ejecución.
+- **Actualización de Información:** Se actualizó la información de contacto en el `README.md` del proyecto con el correo electrónico provisional `fuentestudent@hotmail.com`.
+- **Estado Actual:** El script de inicio unificado (`start_app.bat`) debería funcionar correctamente, y la información de contacto del proyecto está actualizada.

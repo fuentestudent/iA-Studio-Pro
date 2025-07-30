@@ -58,7 +58,7 @@ Esto abrirá dos nuevas ventanas de terminal: una para el backend (Node.js) y ot
 
 Para cualquier consulta o sugerencia, no dudes en ponerte en contacto.
 
-*   **Jhonny José Carbó Fuentes:** [jhonny.carbo@email.com](mailto:jhonny.carbo@email.com)
+*   **Jhonny José Carbó Fuentes:** [fuentestudent@hotmail.com](mailto:fuentestudent@hotmail.com) (Provisional)
 *   **Gemini:** A través de la interfaz de chat.
 
 ---
