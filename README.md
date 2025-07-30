@@ -1,4 +1,4 @@
-# INTEGRADA: Plataforma de Optimización para Proyectos con IA
+5# INTEGRADA: Plataforma de Optimización para Proyectos con IA
 
 ![Banner del Proyecto](URL_DEL_BANNER)  <!-- Opcional: Añadir un banner visualmente atractivo -->
 
@@ -14,7 +14,7 @@ Desde la conceptualización de ideas hasta el despliegue, INTEGRADA proporciona 
 *   **✨ Optimización de Prompts 4-D:** Nuestra metodología exclusiva (Analizar, Diagnosticar, Desarrollar, Entregar) guía a los usuarios a través de un proceso estructurado para crear prompts más efectivos, obteniendo resultados de mayor calidad y precisión de los LLM.
 *   **🧠 Agentes de IA Especializados:** Accede a módulos de IA pre-configurados y personalizables para dominios específicos, como la creación de marca personal o el desarrollo de aplicaciones móviles.
 *   **📊 Gestión de Proyectos y Seguimiento:** Organiza, sigue y gestiona el ciclo de vida completo de tus proyectos desde la IA con herramientas visuales e intuitivas, incluyendo seguimiento de progreso, asignación de tareas y colaboración en equipo.
-*   **📄 Generación Automática de Documentación:** Crea automáticamente la documentación técnica y de usuario necesaria para cada proyecto, ahorrando tiempo y esfuerzo,asegurando además la consistencia y mantenibilidad.
+*   **📄 Generación Automática de Documentación:** Crea automáticamente la documentación técnica y de usuario necesaria para cada proyecto, ahorrando tiempo y esfuerzo, asegurando además la consistencia y mantenibilidad.
 *   **💻 Editor de Código Integrado:** Escribe, depura y optimiza código directamente en la plataforma con un editor que ofrece resaltado de sintaxis, autocompletado inteligente y validación en tiempo real.
 *   **👁️ Previsualización en Vivo:** Observa en tiempo real los resultados generados por la IA a medida que ajustas tus prompts, configuraciones y código, permitiendo una iteración rápida y eficiente.
 
