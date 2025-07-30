@@ -4,7 +4,7 @@ Este documento sirve como prueba documental del desarrollo colaborativo del proy
 
 ## 1. Visión y Dirección del Proyecto (Autor: Jhonny José Carbó Fuentes, Director/Arquitectura/Software)
 
-El concepto inicial, la visión estratégica y la definición de las funcionalidades clave de esta plataforma provienen de **Jhonny José Carbó Fuentes, Director/Arquitectura/Software**. Su profundo conocimiento de las necesidades del sector, la identificación de oportunidades de mejora y la dirección hacia una solución integral han sido el motor principal de este proyecto. Jhonny José Carbó Fuentes, Director/Arquitectura/Software ha actuado como el **propietario del proyecto, arquitecto de requisitos y director de la visión**, guiando el desarrollo hacia una solución práctica y efectiva para la optimización de proyectos de IA.
+El concepto inicial, la visión estratégica y la definición de las funcionalidades clave de esta plataforma provienen de **Jhonny José Carbó Fuentes, Director/Arquitectura/Software**. Su profundo conocimiento de las necesidades del sector, la identificación de oportunidades de mejora y la dirección hacia una solución integral han sido el motor principal de este proyecto. Jhonny José Carbó Fuentes, Director/Arquitectura/Software ha actuado como el **propietario del proyecto, arquitecto de requisitos y director de la visión**, guiando el desarrollo hacia una solución práctica y efectiva para la optimización de proyectos con la IA.
 
 ## 2. Desarrollo e Implementación (Autor: Gemini)
 
