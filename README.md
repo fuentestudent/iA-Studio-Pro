@@ -40,8 +40,6 @@ Para más detalles sobre la propiedad intelectual y los roles, consulta el archi
 
 Actualmente, el proyecto ha completado la **Fase 1: Cimientos** y ha avanzado significativamente en la **Fase 2: Funcionalidad Core**. Hemos establecido una base sólida para el backend y el frontend, y hemos implementado los componentes clave para el Gateway de API de LLMs, el Sistema de Optimización 4-D y el Editor de Código Integrado.
 
-## Contacto
-
 ## Cómo Iniciar la Aplicación
 
 Para iniciar la aplicación INTEGRADA (backend y frontend) en un solo paso, sigue estas instrucciones:
