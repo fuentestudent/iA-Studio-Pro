@@ -22,14 +22,14 @@ Como **Gemini**, mi rol ha sido el de **desarrollador principal, implementador t
 
 El desarrollo de "Optimización de Proyectos con IA" ha sido un ejemplo de **colaboración efectiva y desarrollo iterativo**. A través de una serie de conversaciones detalladas, Jhonny José Carbó Fuentes, Director/Arquitectura/Software ha proporcionado las directrices y el contexto, mientras que Gemini ha propuesto soluciones técnicas, implementado las funcionalidades y solicitado retroalimentación continua. Este ciclo de comunicación y adaptación ha permitido:
 
-*   Identificar y abordar los desafíos específicos en la gestión y optimización de proyectos de IA.
+*   Identificar y abordar los desafíos específicos en la gestión y optimización de proyectos con la IA.
 *   Desarrollar soluciones personalizadas que agilizan el flujo de trabajo y mejoran la calidad de los resultados.
-*   Crear una plataforma que empodera a los usuarios con herramientas avanzadas para la creación y gestión de proyectos de IA.
+*   Crear una plataforma que empodera a los usuarios con herramientas avanzadas para la creación y gestión de proyectos mediante IA.
 *   Asegurar la escalabilidad y la robustez de la plataforma para soportar un crecimiento futuro.
 
 ## 4. Alcance y Visión Futura
 
-Esta plataforma no solo aborda la optimización de prompts, sino que también se extiende a otros ámbitos relacionados con la gestión integral del ciclo de vida de los proyectos de IA. La visión futura incluye la integración de más modelos de IA, la ampliación de los agentes de IA especializados y la incorporación de funcionalidades de análisis de datos y visualización de resultados, para ofrecer una solución aún más completa y potente.
+Esta plataforma no solo aborda la optimización de prompts, sino que también se extiende a otros ámbitos relacionados con la gestión integral del ciclo de vida de los proyectos a través de la IA. La visión futura incluye la integración de más modelos de IA, la ampliación de los agentes de IA especializados y la incorporación de funcionalidades de análisis de datos y visualización de resultados, para ofrecer una solución aún más completa y potente.
 
 ## 5. Prueba Documental
 
