@@ -2,3 +2,6 @@ DIALOGUE_HISTORY.md
 backend/.env
 node_modules/
 .env
+*.log
+backend/*.log
+frontend/*.log

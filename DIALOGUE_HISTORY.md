@@ -55,3 +55,14 @@ Este documento registra las interacciones clave, decisiones y progreso del proye
     - Se modificó `.gitignore` para asegurar que `backend/.env` (y `node_modules/` y `.env` en la raíz) sean excluidos del control de versiones.
     - Se actualizó `GIT_PROTOCOL.md` para reforzar la directriz de no subir información sensible.
 - **Estado Actual:** La información sensible ha sido eliminada de los archivos versionados y las instrucciones de configuración han sido actualizadas para seguir las mejores prácticas de seguridad.
+
+### 29 de julio de 2025 - Auditoría de Errores y Diagnóstico de Servidores
+
+- **Objetivo:** Realizar una auditoría de los errores identificados, clasificando su estado de resolución y documentando las soluciones aplicadas, para obtener una visión clara del progreso en la depuración.
+- **Acciones Realizadas:**
+    - Se generó un "Informe de Auditoría de Errores" detallado, clasificando los problemas en "Resueltos" y "Pendientes de Confirmación/Resolución".
+    - Se documentó un nuevo "Protocolo de Auditoría de Errores" en `REPORTING_PROTOCOL.md`.
+    - Se intentó diagnosticar el problema de inicio de los servidores ejecutando `npm start` del backend directamente, lo que reveló un error de `MONGODB_URI` `undefined`.
+    - Se identificó que el archivo `.env` del backend no contenía la `MONGODB_URI` y `JWT_SECRET`.
+    - Se intentó solucionar el error `retryWrites must be either "true" or "false"` modificando `db.js` para establecer `retryWrites: true` directamente en las opciones de conexión de Mongoose y eliminando el parámetro de la URI en `.env`.
+- **Estado Actual:** Se ha completado la auditoría de errores. Los problemas de `start_app.bat` y `retryWrites` están pendientes de confirmación de resolución. El backend aún no inicia correctamente debido a problemas con la conexión a MongoDB.
