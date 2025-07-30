@@ -34,3 +34,8 @@ Este documento registra las interacciones clave, decisiones y progreso del proye
 - **Solución Implementada:** Se sobrescribió `start_app.bat` con una versión simplificada y sin comentarios, lo que resolvió el problema de ejecución.
 - **Actualización de Información:** Se actualizó la información de contacto en el `README.md` del proyecto con el correo electrónico provisional `fuentestudent@hotmail.com`.
 - **Estado Actual:** El script de inicio unificado (`start_app.bat`) debería funcionar correctamente, y la información de contacto del proyecto está actualizada.
+
+### 29 de julio de 2025 - Ajuste de Información de Contacto
+
+- **Acción Realizada:** Se ajustó la sección de contacto en el `README.md` para mostrar únicamente el nombre del propietario y el correo electrónico provisional (`fuentestudent@hotmail.com`), eliminando la información de Gemini.
+- **Estado Actual:** La información de contacto en el `README.md` está ahora simplificada según lo solicitado.
