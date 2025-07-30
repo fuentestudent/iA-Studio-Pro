@@ -1,9 +1,6 @@
 @echo off
 echo Iniciando la aplicacion INTEGRADA...
 
-set MONGODB_URI="mongodb+srv://<usuario>:<contraseña>@cluster0.hxltzpx.mongodb.net/integrada_db?retryWrites=true&w=majority&appName=Cluster0"
-set JWT_SECRET="tu_secreto_jwt_aqui"
-
 start cmd /k "cd backend && npm start"
 start cmd /k "cd frontend && npm run dev"
 

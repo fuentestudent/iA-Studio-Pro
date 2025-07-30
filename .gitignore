@@ -1,1 +1,4 @@
-DIALOGUE_HISTORY.md  
+DIALOGUE_HISTORY.md
+backend/.env
+node_modules/
+.env

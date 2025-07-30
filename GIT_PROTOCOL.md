@@ -117,7 +117,7 @@ Utiliza el archivo `.gitignore` para especificar archivos y directorios que Git 
 
 ## 7. Seguridad en Git
 
-*   **Nunca subas credenciales o información sensible** directamente al repositorio. Utiliza variables de entorno o sistemas de gestión de secretos.
+*   **Nunca subas credenciales o información sensible (como claves API, secretos, archivos `.env`)** directamente al repositorio. Utiliza variables de entorno o sistemas de gestión de secretos. Asegúrate de que los archivos `.env` estén correctamente listados en `.gitignore`.
 *   Revisa los cambios antes de hacer commit y push.
 *   Utiliza SSH para la autenticación con el repositorio remoto cuando sea posible.
 

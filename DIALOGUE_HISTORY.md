@@ -45,3 +45,13 @@ Este documento registra las interacciones clave, decisiones y progreso del proye
 - **Problema Identificado:** El archivo `start_app.bat` seguía reportando errores como `"cho" no se reconoce como un comando interno o externo`, indicando un problema de codificación o interpretación del script por parte del shell.
 - **Solución Implementada:** Se sobrescribió el archivo `start_app.bat` con el mismo contenido simplificado, con la expectativa de que el sistema lo guarde con una codificación compatible (ej. ANSI/Windows-1252) y resuelva el problema de ejecución.
 - **Estado Actual:** Se ha reescrito `start_app.bat`. Se espera que el usuario lo pruebe y confirme la resolución del problema.
+
+### 29 de julio de 2025 - Corrección Crítica de Seguridad: Manejo de Credenciales
+
+- **Problema Identificado:** Se incluyeron accidentalmente credenciales sensibles (URI de MongoDB y secreto JWT) directamente en el archivo `start_app.bat` y en la descripción del `README.md`, lo cual es una vulnerabilidad de seguridad crítica.
+- **Solución Implementada:**
+    - Se modificó `start_app.bat` para eliminar las credenciales. Ahora, el backend cargará estas variables desde su propio archivo `.env`.
+    - Se actualizó `README.md` para instruir al usuario a crear un archivo `.env` en el directorio `backend` con sus propias credenciales.
+    - Se modificó `.gitignore` para asegurar que `backend/.env` (y `node_modules/` y `.env` en la raíz) sean excluidos del control de versiones.
+    - Se actualizó `GIT_PROTOCOL.md` para reforzar la directriz de no subir información sensible.
+- **Estado Actual:** La información sensible ha sido eliminada de los archivos versionados y las instrucciones de configuración han sido actualizadas para seguir las mejores prácticas de seguridad.

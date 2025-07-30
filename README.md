@@ -45,12 +45,17 @@ Actualmente, el proyecto ha completado la **Fase 1: Cimientos** y ha avanzado si
 
 Para iniciar la aplicación INTEGRADA (backend y frontend) en un solo paso, sigue estas instrucciones:
 
-1.  **Configurar Variables de Entorno:**
-    *   Abre el archivo `start_app.bat` ubicado en la raíz del proyecto (`C:\www\Optimización de Proyectos con IA\start_app.bat`).
-    *   Reemplaza los placeholders `<usuario>`, `<contraseña>` y `tu_secreto_jwt_aqui` con tus credenciales reales de MongoDB Atlas y un secreto JWT fuerte. Es crucial que estas credenciales sean correctas para que el backend pueda conectarse a la base de datos.
+1.  **Configurar Variables de Entorno del Backend:**
+    *   Crea un archivo `.env` en el directorio `backend` (`C:\www\Optimización de Proyectos con IA\backend\.env`).
+    *   Añade las siguientes variables a ese archivo, reemplazando los placeholders con tus credenciales reales:
+        ```
+        MONGODB_URI="mongodb+srv://<usuario>:<contraseña>@cluster0.hxltzpx.mongodb.net/integrada_db?retryWrites=true&w=majority&appName=Cluster0"
+        JWT_SECRET="tu_secreto_jwt_aqui"
+        ```
+    *   **¡Importante!** Nunca subas este archivo `.env` a tu repositorio Git, ya que contiene información sensible.
 
 2.  **Ejecutar el Script de Inicio:**
-    *   Haz doble clic en `start_app.bat` o ejecútalo desde la línea de comandos.
+    *   Haz doble clic en `start_app.bat` ubicado en la raíz del proyecto (`C:\www\Optimización de Proyectos con IA\start_app.bat`) o ejecútalo desde la línea de comandos.
 
 Esto abrirá dos nuevas ventanas de terminal: una para el backend (Node.js) y otra para el frontend (Vite). El backend se ejecutará en `http://localhost:3000` y el frontend en `http://localhost:5173` (o el puerto que Vite asigne).
 
