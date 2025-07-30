@@ -4,7 +4,7 @@
 
 ## Descripción General
 
-**INTEGRADA** es una plataforma web de vanguardia, diseñada para revolucionar la forma en que los desarrolladores, equipos de trabajo gestionan y optimizan proyectos con inteligencia artificial. Impulsada por una arquitectura robusta y un diseño intuitivo, INTEGRADA integra de forma inteligente múltiples modelos de lenguaje de gran tamaño (LLM) y ofrece un conjunto de herramientas avanzadas para mejorar la eficiencia, la calidad y la velocidad en todo el ciclo de vida del desarrollo con IA.
+**INTEGRADA** es una plataforma web de vanguardia, diseñada para revolucionar la forma en que los desarrolladores, equipos de trabajo gestionan y optimizan proyectos con inteligencia artificial. Impulsada por una arquitectura robusta y un diseño intuitivo, INTEGRADA integra de forma inteligente múltiples modelos de lenguaje de gran tamaño (LLM) y ofrece un conjunto de herramientas avanzadas para mejorar la eficiencia, la calidad y la velocidad en todo el ciclo de vida del desarrollo con la IA.
 
 Desde la conceptualización de ideas hasta el despliegue, INTEGRADA proporciona una solución integral que combina la potencia de la IA con una gestión de proyectos eficaz, permitiendo a los usuarios maximizar el potencial de sus implementaciones con la inteligencia artificial.
 
