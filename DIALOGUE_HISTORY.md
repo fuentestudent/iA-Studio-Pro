@@ -14,3 +14,16 @@ Este documento registra las interacciones clave, decisiones y progreso del proye
 - **Protocolo ABC Establecido:** Se formaliza el protocolo **ABC (Actualizar, Bloquear, Cargar)** como el procedimiento estándar obligatorio al finalizar cualquier fase o tarea significativa. Este protocolo asegura que toda la documentación esté siempre sincronizada con el código y el repositorio remoto.
 - **Nombre del Proyecto:** Se registra formalmente que "INTEGRADA" es un nombre de proyecto **provisional**. 
 - **Tarea Pendiente Urgente:** Se establece el desarrollo de un **branding** completo (nombre final, logo, identidad visual) como una tarea prioritaria a abordar en el futuro cercano.
+
+### 29 de julio de 2025 - Simplificación del Inicio de la Aplicación y Protocolo de Informes
+
+- **Objetivo:** Reducir la brecha de pasos para iniciar la aplicación y confirmar la resolución de problemas de variables de entorno.
+- **Acciones Realizadas:**
+    - Se confirmó que el problema de la variable de entorno `MONGODB_URI_TEST` para las pruebas unitarias fue identificado y su solución propuesta.
+    - Se añadió un script `start` al `package.json` del backend para iniciar el servidor de forma estándar.
+    - Se creó el archivo `start_app.bat` en la raíz del proyecto para iniciar tanto el backend como el frontend en un solo paso, incluyendo la configuración de variables de entorno `MONGODB_URI` y `JWT_SECRET`.
+    - Se actualizó el `README.md` del proyecto con las instrucciones para usar el nuevo script `start_app.bat`.
+    - Se estableció un nuevo protocolo de informes, creando el directorio `C:\www\MensajeriaGemini\informes\` con subcarpetas por proyecto, y se definió la nomenclatura y el contenido de los informes (en formatos `.md` y `.txt`).
+    - Se guardó el informe completo del proyecto en ambos formatos (`.md` y `.txt`).
+    - Se creó el archivo `REPORTING_PROTOCOL.md` para documentar este nuevo procedimiento de informes.
+- **Estado Actual:** La aplicación puede iniciarse de forma simplificada. Se ha establecido un sistema robusto para la documentación de informes y se han actualizado los archivos de protocolo relevantes.

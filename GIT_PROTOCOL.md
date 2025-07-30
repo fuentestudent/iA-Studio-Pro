@@ -129,3 +129,7 @@ Utiliza el archivo `.gitignore` para especificar archivos y directorios que Git 
 ---
 
 **Este protocolo es un documento vivo y será actualizado a medida que el proyecto evolucione y surjan nuevas necesidades o mejores prácticas en la gestión de versiones.** La colaboración y el seguimiento de estas directrices son clave para el éxito del proyecto. La colaboración y el seguimiento de estas directrices son clave para el éxito del proyecto.
+
+## 9. Scripts de Inicio y Automatización
+
+Es crucial que cualquier script de inicio o automatización (como `start_app.bat`) sea versionado en el repositorio. Esto asegura que todos los colaboradores tengan acceso a la forma correcta de iniciar y operar la aplicación, y que cualquier cambio en estos scripts sea rastreado y revisado. Mantener estos scripts actualizados y funcionales es tan importante como el código fuente de la aplicación.

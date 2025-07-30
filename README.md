@@ -41,4 +41,25 @@ Actualmente, el proyecto ha completado la **Fase 1: Cimientos** y ha avanzado si
 
 ## Contacto
 
+## Cómo Iniciar la Aplicación
+
+Para iniciar la aplicación INTEGRADA (backend y frontend) en un solo paso, sigue estas instrucciones:
+
+1.  **Configurar Variables de Entorno:**
+    *   Abre el archivo `start_app.bat` ubicado en la raíz del proyecto (`C:\www\Optimización de Proyectos con IA\start_app.bat`).
+    *   Reemplaza los placeholders `<usuario>`, `<contraseña>` y `tu_secreto_jwt_aqui` con tus credenciales reales de MongoDB Atlas y un secreto JWT fuerte. Es crucial que estas credenciales sean correctas para que el backend pueda conectarse a la base de datos.
+
+2.  **Ejecutar el Script de Inicio:**
+    *   Haz doble clic en `start_app.bat` o ejecútalo desde la línea de comandos.
+
+Esto abrirá dos nuevas ventanas de terminal: una para el backend (Node.js) y otra para el frontend (Vite). El backend se ejecutará en `http://localhost:3000` y el frontend en `http://localhost:5173` (o el puerto que Vite asigne).
+
+## Contacto
+
 Para cualquier consulta o sugerencia, no dudes en ponerte en contacto.
+
+*   **Jhonny José Carbó Fuentes:** [jhonny.carbo@email.com](mailto:jhonny.carbo@email.com)
+*   **Gemini:** A través de la interfaz de chat.
+
+---
+*Este README fue generado y es mantenido con la asistencia de Gemini.*
