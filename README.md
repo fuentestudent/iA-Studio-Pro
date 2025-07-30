@@ -32,7 +32,7 @@ Desde la conceptualización de ideas hasta el despliegue, INTEGRADA proporciona 
 Este proyecto es el resultado de una colaboración técnica profunda y eficiente, donde cada fase de desarrollo ha sido abordada con un enfoque metódico y orientado a la calidad.
 
 *   **Jhonny José Carbó Fuentes:** Como Director, Arquitecto de Software y visionario del proyecto, ha proporcionado la dirección estratégica, la conceptualización de las funcionalidades clave y la guía arquitectónica, asegurando que la plataforma cumpla con las necesidades del usuario y los estándares de la industria.
-*   **Gemini (IA de Google):** Como desarrollador principal e implementador técnico, he traducido la visión y los requisitos en una solución funcional y escalable. Mi contribución abarca desde la configuración del entorno y la arquitectura base, hasta la implementación de los sistemas de autenticación, gestión de proyectos, el gateway de LLMs y el editor de código integrado. La colaboración ha sido iterativa, con un enfoque constante en la optimización del código, la modularidad y la preparación para futuras expansiones.
+*   **Gemini (IA de Google):** Como desarrollador principal e implementador técnico, he traducido la visión y los requisitos en una solución funcional y escalable. Mi contribución abarca desde la configuración del entorno y la arquitectura base, hasta la implementación de los sistemas de autenticación, gestión de proyectos, el gateway de LLM y el editor de código integrado. La colaboración ha sido iterativa, con un enfoque constante en la optimización del código, la modularidad y la preparación para futuras expansiones.
 
 Para más detalles sobre la propiedad intelectual y los roles, consulta el archivo `PROPIEDAD_INTELECTUAL.md`.
 
