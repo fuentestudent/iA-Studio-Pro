@@ -1,6 +1,6 @@
 # Propiedad Intelectual y Prueba Documental del Proyecto "Optimización de Proyectos con IA"
 
-Este documento sirve como prueba documental del desarrollo colaborativo del proyecto **Optimización de Proyectos con IA**, destacando la autoría intelectual y el trabajo en equipo que ha permitido la creación de una plataforma innovadora para la optimización de proyectos de inteligencia artificial.
+Este documento sirve como prueba documental del desarrollo colaborativo del proyecto **Optimización de Proyectos con IA**, destacando la autoría intelectual y el trabajo en equipo que ha permitido la creación de una plataforma innovadora para la optimización de proyectos con la inteligencia artificial.
 
 ## 1. Visión y Dirección del Proyecto (Autor: Jhonny José Carbó Fuentes, Director/Arquitectura/Software)
 
