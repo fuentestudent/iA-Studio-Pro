@@ -1,4 +1,4 @@
-#5INTEGRADA: Plataforma de Optimización para Proyectos con IA
+## INTEGRADA: Plataforma de Optimización para Proyectos con IA
 
 ![Banner del Proyecto](URL_DEL_BANNER)  <!-- Opcional: Añadir un banner visualmente atractivo -->
 
