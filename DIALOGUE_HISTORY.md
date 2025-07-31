@@ -75,3 +75,13 @@ Este documento registra las interacciones clave, decisiones y progreso del proye
     - Se actualizó `REPORTING_PROTOCOL.md` para reforzar la directriz de que los informes que contengan información sensible deben ser tratados como documentos internos y no deben ser subidos a repositorios remotos públicos.
     - Se revisó la documentación existente para asegurar que no haya detalles sensibles expuestos inadvertidamente.
 - **Estado Actual:** Se ha implementado una directriz de seguridad robusta para el manejo de datos sensibles en la documentación y los repositorios.
+
+### 29 de julio de 2025 - Implementación del Protocolo de Informe de Progreso
+
+- **Objetivo:** Establecer un protocolo claro para medir el progreso del proyecto y generar informes detallados.
+- **Acciones Realizadas:**
+    - Se definieron las terminologías "Depuración" y "Corrección de Errores".
+    - Se estableció un "Protocolo de Informe de Progreso" que incluye el estado general del proyecto, progreso por fases, porcentaje de progreso general y balance de errores.
+    - Se generó el primer "Informe de Progreso" del proyecto "INTEGRADA" (29 de julio de 2025).
+    - Se actualizó `REPORTING_PROTOCOL.md` para incluir la sección sobre el "Protocolo de Informe de Progreso".
+- **Estado Actual:** Se ha implementado una metodología clara para el seguimiento del progreso del proyecto, y se ha generado el primer informe de estado.
