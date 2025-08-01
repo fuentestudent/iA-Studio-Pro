@@ -38,7 +38,21 @@ Para más detalles sobre la propiedad intelectual y los roles, consulta el archi
 
 ## Estado del Proyecto
 
-Actualmente, el proyecto ha completado la **Fase 1: Cimientos** y ha avanzado significativamente en la **Fase 2: Funcionalidad Core**. Hemos establecido una base sólida para el backend y el frontend, y hemos implementado los componentes clave para el Gateway de API de LLMs, el Sistema de Optimización 4-D y el Editor de Código Integrado.
+Actualmente, el proyecto ha completado las **Fases 0 a 4** y se encuentra en la **Fase 5: Pruebas y Calidad del Código** (en progreso). Hemos establecido una base sólida para el backend y el frontend, implementado las funcionalidades core, el dashboard básico, mejoras de UI/UX, y estamos asegurando la estabilidad mediante pruebas unitarias y de integración.
+
+## Mockups del Dashboard
+
+A continuación, se presentan los mockups visuales del dashboard de INTEGRADA, mostrando el diseño propuesto en español e inglés. El diseño es **limpio, profesional y moderno**, utilizando una paleta de colores con fondo oscuro (`#101010` / `#121212`), azul turquesa (`#30D5C8` / `#4ecdc4`) como color de acento, y gris claro para el texto. La tipografía principal es `Inter` y `Space Grotesk` para títulos.
+
+El dashboard incluye un sidebar oscuro con el logo INTEGRADA y opciones de navegación ("Dashboard", "Proyectos", "Configuración", "Cerrar sesión"). El panel principal presenta métricas clave ("Proyectos Totales", "Usuarios Activos", "Tiempo de Respuesta"), una sección de "Chat", el "Método de Optimización" (4 etapas), un panel de código JavaScript, y una sección para "Optimizando Proyectos de IA" con un botón "Comenzar".
+
+El código HTML/CSS completo para este mockup se encuentra en `C:\www\MensajeriaGemini\Proyectos conceptuales\INTEGRADA Plataforma de Optimización de Proyectos de IA\Create Web Page\Mockup visual del dashboard + Codigo.txt`.
+
+### Versión en Español
+![Mockup Dashboard Español](public/assets/images/Mockup Dashboard Español.jpeg)
+
+### Versión en Inglés
+![Mockup Dashboard Inglés](public/assets/images/Mockup Dashboard Inglés.jpeg)
 
 ## Contacto
 
