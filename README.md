@@ -48,8 +48,6 @@ El **panel principal** presenta métricas clave ("Proyectos Totales", "Usuarios 
 
 La paleta de colores utiliza un **fondo oscuro** (`#101010` / `#121212`), **azul turquesa** (`#30D5C8` / `#4ecdc4`) como color de acento, y **gris claro** para el texto. La tipografía principal es `Inter` para el cuerpo de texto y `Space Grotesk` para títulos y encabezados.
 
-El código HTML/CSS completo para este mockup se encuentra en `C:\www\MensajeriaGemini\Proyectos conceptuales\INTEGRADA Plataforma de Optimización de Proyectos de IA\Create Web Page\Mockup visual del dashboard + Codigo.txt`.
-
 ### Versión en Español
 ![Mockup Dashboard Español](public/assets/images/Mockup Dashboard Español.jpeg)
 
