@@ -46,8 +46,6 @@ A continuación, se presentan los mockups visuales del dashboard de INTEGRADA, m
 
 El dashboard incluye un sidebar oscuro con el logo INTEGRADA y opciones de navegación ("Dashboard", "Proyectos", "Configuración", "Cerrar sesión"). El panel principal presenta métricas clave ("Proyectos Totales", "Usuarios Activos", "Tiempo de Respuesta"), una sección de "Chat", el "Método de Optimización" (4 etapas), un panel de código JavaScript, y una sección para "Optimizando Proyectos de IA" con un botón "Comenzar".
 
-El código HTML/CSS completo para este mockup se encuentra en `C:\www\MensajeriaGemini\Proyectos conceptuales\INTEGRADA Plataforma de Optimización de Proyectos de IA\Create Web Page\Mockup visual del dashboard + Codigo.txt`.
-
 ### Versión en Español
 ![Mockup Dashboard Español](public/assets/images/Mockup Dashboard Español.jpeg)
 
