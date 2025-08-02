@@ -42,9 +42,11 @@ Actualmente, el proyecto ha completado las **Fases 0 a 4** y se encuentra en la 
 
 ## Mockups del Dashboard
 
-A continuación, se presentan los mockups visuales del dashboard de INTEGRADA, mostrando el diseño propuesto en español e inglés. El diseño es **limpio, profesional y moderno**, utilizando una paleta de colores con fondo oscuro (`#101010` / `#121212`), azul turquesa (`#30D5C8` / `#4ecdc4`) como color de acento, y gris claro para el texto. La tipografía principal es `Inter` y `Space Grotesk` para títulos.
+A continuación, se presentan los mockups visuales del dashboard de INTEGRADA, mostrando el diseño propuesto en español e inglés. El diseño es **limpio, profesional y moderno**, con un **sidebar oscuro** que incluye el logo INTEGRADA y opciones de navegación ("Dashboard", "Proyectos", "Configuración", "Cerrar sesión").
 
-El dashboard incluye un sidebar oscuro con el logo INTEGRADA y opciones de navegación ("Dashboard", "Proyectos", "Configuración", "Cerrar sesión"). El panel principal presenta métricas clave ("Proyectos Totales", "Usuarios Activos", "Tiempo de Respuesta"), una sección de "Chat", el "Método de Optimización" (4 etapas), un panel de código JavaScript, y una sección para "Optimizando Proyectos de IA" con un botón "Comenzar".
+El **panel principal** presenta métricas clave ("Proyectos Totales", "Usuarios Activos", "Tiempo de Respuesta" con una pequeña gráfica), una sección de "Chat" con espacio para mensajes, una sección "Método de Optimización" con las etapas numeradas ("1 Deconstruir", "2 Diagnosticar", "3 Desarrollar", "4 Entregar"), un panel de código con sintaxis JavaScript (ej. función `optimize`), y una sección "Optimizando Proyectos IA" con un botón "Comenzar".
+
+La paleta de colores utiliza un **fondo oscuro** (`#101010` / `#121212`), **azul turquesa** (`#30D5C8` / `#4ecdc4`) como color de acento, y **gris claro** para el texto. La tipografía principal es `Inter` para el cuerpo de texto y `Space Grotesk` para títulos y encabezados.
 
 El código HTML/CSS completo para este mockup se encuentra en `C:\www\MensajeriaGemini\Proyectos conceptuales\INTEGRADA Plataforma de Optimización de Proyectos de IA\Create Web Page\Mockup visual del dashboard + Codigo.txt`.
 
