@@ -1,0 +1,3 @@
+docs: Add troubleshooting protocol for +srv connection issues
+
+Create a new internal protocol to document the diagnosis and resolution of connection failures to MongoDB Atlas when using `+srv` connection strings. This will serve as a reference to prevent similar diagnostic errors in the future.
