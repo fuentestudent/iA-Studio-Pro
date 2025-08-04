@@ -5,3 +5,4 @@ node_modules/
 *.log
 backend/*.log
 frontend/*.log
+00-Documentación-tecnica-interna/Propuestas de Diseño iA Studio/
