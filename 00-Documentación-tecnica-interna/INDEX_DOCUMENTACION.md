@@ -25,7 +25,15 @@ Aquí se encuentran los informes generados en fases anteriores del proyecto, que
 
 *   [mongodb_connection_fix.md](casos_de_error/mongodb_connection_fix.md)
 
-## 5. Propuestas de Diseño (Archivos con Nombres Largos)
+## 5. Documentación Externa y Protocolos Relevantes (Legacy)
+
+Estos documentos se encuentran fuera del repositorio actual del proyecto, pero contienen información histórica y protocolos que son relevantes para entender el contexto y las decisiones pasadas.
+
+*   [Historial de Diálogo (DIALOGUE_HISTORY.md)](../../../temp_repo_clone/DIALOGUE_HISTORY.md)
+*   [Protocolo de Git (GIT_PROTOCOL.md)](../../../temp_repo_clone/GIT_PROTOCOL.md)
+*   [Protocolos de Solución de Problemas (TROUBLESHOOTING_PROTOCOLS.md)](../../../temp_repo_clone/TROUBLESHOOTING_PROTOCOLS.md)
+
+## 6. Propuestas de Diseño (Archivos con Nombres Largos)
 
 Debido a la longitud de los nombres de archivo, el contenido de este directorio no está directamente versionado en Git. Se recomienda revisar su contenido manualmente si es necesario.
 
