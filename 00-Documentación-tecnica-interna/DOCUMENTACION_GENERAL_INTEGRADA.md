@@ -4,6 +4,9 @@
 
 ## 1. Visión General y Objetivos del Proyecto
 
+Para una visión completa de toda la documentación interna del proyecto, incluyendo informes históricos y detalles de diseño, por favor, consulta el [Índice de Documentación Interna](INDEX_DOCUMENTACION.md).
+
+
 **INTEGRADA** es una plataforma web diseñada para la gestión y optimización de proyectos de inteligencia artificial. Su objetivo principal es integrar múltiples modelos de lenguaje de gran tamaño (LLM) y ofrecer herramientas avanzadas para mejorar la eficiencia, calidad y velocidad en el ciclo de vida del desarrollo de IA.
 
 ### Características Principales:
