@@ -10,4 +10,6 @@ Para una visión completa y detallada del proyecto, incluyendo su visión, stack
 
 ## Estado Actual de la Sesión:
 
-(Aquí se incluirá un resumen generado automáticamente en futuras sesiones)
+La sesión de trabajo actual ha finalizado. El estado y los próximos pasos se han guardado en el siguiente checkpoint:
+
+*   [Checkpoint de Sesión: 4 de Agosto de 2025](session_checkpoint_2025-08-04.md)

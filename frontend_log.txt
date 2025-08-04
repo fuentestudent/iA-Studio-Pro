@@ -2,10 +2,231 @@
 > frontend@0.0.0 dev
 > vite
 
-Port 5173 is in use, trying another one...
-Port 5174 is in use, trying another one...
+[2m8:03:46 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m Re-optimizing dependencies because vite config has changed
 
-  [32m[1mVITE[22m v7.0.6[39m  [2mready in [0m[1m110154[22m[2m[0m ms[22m
+  [32m[1mVITE[22m v7.0.6[39m  [2mready in [0m[1m43865[22m[2m[0m ms[22m
 
-  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5175[22m/[39m
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
 [2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[31m(!) Failed to run dependency scan. Skipping dependency pre-bundling. Error: [31m  Failed to scan for dependencies from entries:
+  C:/www/Optimización-de-Proyectos-con-IA/frontend/index.html
+
+  [31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mThe JSX syntax extension is not currently enabled[0m
+
+    src/context/AuthContext.js:36:4:
+[37m      36 │     [32m<[37mAuthContext.Provider value={{ user, loading, loginUser, logou...
+         ╵     [32m^[0m
+
+  The esbuild loader for this file is currently set to "js" but it must be set to "jsx" to be able to parse JSX syntax. You can use "loader: { '.js': 'jsx' }" to do that.
+
+
+    at failureErrorWithLog (C:\www\Optimización-de-Proyectos-con-IA\frontend\node_modules\esbuild\lib\main.js:1467:15)
+    at C:\www\Optimización-de-Proyectos-con-IA\frontend\node_modules\esbuild\lib\main.js:926:25
+    at runOnEndCallbacks (C:\www\Optimización-de-Proyectos-con-IA\frontend\node_modules\esbuild\lib\main.js:1307:45)
+    at buildResponseToResult (C:\www\Optimización-de-Proyectos-con-IA\frontend\node_modules\esbuild\lib\main.js:924:7)
+    at C:\www\Optimización-de-Proyectos-con-IA\frontend\node_modules\esbuild\lib\main.js:936:9
+    at new Promise (<anonymous>)
+    at requestCallbacks.on-end (C:\www\Optimización-de-Proyectos-con-IA\frontend\node_modules\esbuild\lib\main.js:935:54)
+    at handleRequest (C:\www\Optimización-de-Proyectos-con-IA\frontend\node_modules\esbuild\lib\main.js:628:17)
+    at handleIncomingPacket (C:\www\Optimización-de-Proyectos-con-IA\frontend\node_modules\esbuild\lib\main.js:653:7)
+    at Socket.readFromStdout (C:\www\Optimización-de-Proyectos-con-IA\frontend\node_modules\esbuild\lib\main.js:581:7)[39m
+[2m8:05:03 a. m.[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/www/Optimización-de-Proyectos-con-IA/frontend/src/context/AuthContext.js[39m:38:27
+[33m  36 |      <AuthContext.Provider value={{ user, loading, loginUser, logoutUser, registerUser }}>
+  37 |        {children}
+  38 |      </AuthContext.Provider>
+     |                             ^
+  39 |    );
+  40 |  };[39m
+[2m8:05:05 a. m.[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/www/Optimización-de-Proyectos-con-IA/frontend/src/context/AuthContext.js[39m:38:27
+[33m  36 |      <AuthContext.Provider value={{ user, loading, loginUser, logoutUser, registerUser }}>
+  37 |        {children}
+  38 |      </AuthContext.Provider>
+     |                             ^
+  39 |    );
+  40 |  };[39m
+      at TransformPluginContext._formatLog (file:///C:/www/Optimizaci%C3%B3n-de-Proyectos-con-IA/frontend/node_modules/vite/dist/node/chunks/dep-BHkUv4Z8.js:31460:43)
+      at TransformPluginContext.error (file:///C:/www/Optimizaci%C3%B3n-de-Proyectos-con-IA/frontend/node_modules/vite/dist/node/chunks/dep-BHkUv4Z8.js:31457:14)
+      at TransformPluginContext.transform (file:///C:/www/Optimizaci%C3%B3n-de-Proyectos-con-IA/frontend/node_modules/vite/dist/node/chunks/dep-BHkUv4Z8.js:29962:10)
+      at async EnvironmentPluginContainer.transform (file:///C:/www/Optimizaci%C3%B3n-de-Proyectos-con-IA/frontend/node_modules/vite/dist/node/chunks/dep-BHkUv4Z8.js:31274:14)
+      at async loadAndTransform (file:///C:/www/Optimizaci%C3%B3n-de-Proyectos-con-IA/frontend/node_modules/vite/dist/node/chunks/dep-BHkUv4Z8.js:26451:26)
+[2m8:05:05 a. m.[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/www/Optimización-de-Proyectos-con-IA/frontend/src/context/AuthContext.js[39m:38:27
+[33m  36 |      <AuthContext.Provider value={{ user, loading, loginUser, logoutUser, registerUser }}>
+  37 |        {children}
+  38 |      </AuthContext.Provider>
+     |                             ^
+  39 |    );
+  40 |  };[39m
+[2m8:05:05 a. m.[22m [31m[1m[vite][22m[39m [31mInternal server error: [postcss] It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.[39m
+  Plugin: [35mvite:css[39m
+  File: [36mC:/www/Optimización-de-Proyectos-con-IA/frontend/src/index.css[39m:undefined:NaN
+      at We (C:\www\Optimización-de-Proyectos-con-IA\frontend\node_modules\tailwindcss\dist\lib.js:35:2121)
+      at LazyResult.runOnRoot (C:\www\Optimización-de-Proyectos-con-IA\frontend\node_modules\postcss\lib\lazy-result.js:361:16)
+      at LazyResult.runAsync (C:\www\Optimización-de-Proyectos-con-IA\frontend\node_modules\postcss\lib\lazy-result.js:290:26)
+      at LazyResult.async (C:\www\Optimización-de-Proyectos-con-IA\frontend\node_modules\postcss\lib\lazy-result.js:192:30)
+      at LazyResult.then (C:\www\Optimización-de-Proyectos-con-IA\frontend\node_modules\postcss\lib\lazy-result.js:436:17)
+[2m8:05:05 a. m.[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: [postcss] It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+  Plugin: [35mvite:css[39m
+  File: [36mC:/www/Optimización-de-Proyectos-con-IA/frontend/src/index.css[39m:undefined:NaN
+[2m8:05:05 a. m.[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to resolve import "./context/AuthContext" from "src/components/Layout.jsx". Does the file exist?
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/www/Optimización-de-Proyectos-con-IA/frontend/src/components/Layout.jsx[39m:3:24
+[33m  18 |  import React from "react";
+  19 |  import { Outlet } from "react-router-dom";
+  20 |  import { useAuth } from "./context/AuthContext";
+     |                           ^
+  21 |  const Layout = () => {
+  22 |    _s();[39m
+[2m8:05:05 a. m.[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/www/Optimización-de-Proyectos-con-IA/frontend/src/context/AuthContext.js[39m:38:27
+[33m  36 |      <AuthContext.Provider value={{ user, loading, loginUser, logoutUser, registerUser }}>
+  37 |        {children}
+  38 |      </AuthContext.Provider>
+     |                             ^
+  39 |    );
+  40 |  };[39m
+[2m8:05:05 a. m.[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to resolve import "./context/AuthContext" from "src/components/ProtectedRoute.jsx". Does the file exist?
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/www/Optimización-de-Proyectos-con-IA/frontend/src/components/ProtectedRoute.jsx[39m:3:24
+[33m  18 |  import React from "react";
+  19 |  import { Navigate, Outlet } from "react-router-dom";
+  20 |  import { useAuth } from "./context/AuthContext";
+     |                           ^
+  21 |  const ProtectedRoute = () => {
+  22 |    _s();[39m
+[2m8:05:05 a. m.[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/www/Optimización-de-Proyectos-con-IA/frontend/src/context/AuthContext.js[39m:38:27
+[33m  36 |      <AuthContext.Provider value={{ user, loading, loginUser, logoutUser, registerUser }}>
+  37 |        {children}
+  38 |      </AuthContext.Provider>
+     |                             ^
+  39 |    );
+  40 |  };[39m
+[2m8:07:34 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32m✨ new dependencies optimized: [33mreact-dom/client, react-i18next, i18next, react-router-dom, lucide-react, axios[32m[39m
+[2m8:07:34 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32m✨ optimized dependencies changed. reloading[39m
+[2m8:07:35 a. m.[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: [postcss] It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+  Plugin: [35mvite:css[39m
+  File: [36mC:/www/Optimización-de-Proyectos-con-IA/frontend/src/index.css[39m:undefined:NaN
+[2m8:07:36 a. m.[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/www/Optimización-de-Proyectos-con-IA/frontend/src/context/AuthContext.js[39m:38:27
+[33m  36 |      <AuthContext.Provider value={{ user, loading, loginUser, logoutUser, registerUser }}>
+  37 |        {children}
+  38 |      </AuthContext.Provider>
+     |                             ^
+  39 |    );
+  40 |  };[39m
+[2m8:07:38 a. m.[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/www/Optimización-de-Proyectos-con-IA/frontend/src/context/AuthContext.js[39m:38:27
+[33m  36 |      <AuthContext.Provider value={{ user, loading, loginUser, logoutUser, registerUser }}>
+  37 |        {children}
+  38 |      </AuthContext.Provider>
+     |                             ^
+  39 |    );
+  40 |  };[39m
+[2m8:07:38 a. m.[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to resolve import "./context/AuthContext" from "src/components/ProtectedRoute.jsx". Does the file exist?
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/www/Optimización-de-Proyectos-con-IA/frontend/src/components/ProtectedRoute.jsx[39m:3:24
+[33m  18 |  import React from "react";
+  19 |  import { Navigate, Outlet } from "react-router-dom";
+  20 |  import { useAuth } from "./context/AuthContext";
+     |                           ^
+  21 |  const ProtectedRoute = () => {
+  22 |    _s();[39m
+[2m8:07:38 a. m.[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to resolve import "./context/AuthContext" from "src/components/Layout.jsx". Does the file exist?
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/www/Optimización-de-Proyectos-con-IA/frontend/src/components/Layout.jsx[39m:3:24
+[33m  18 |  import React from "react";
+  19 |  import { Outlet } from "react-router-dom";
+  20 |  import { useAuth } from "./context/AuthContext";
+     |                           ^
+  21 |  const Layout = () => {
+  22 |    _s();[39m
+[2m8:07:38 a. m.[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/www/Optimización-de-Proyectos-con-IA/frontend/src/context/AuthContext.js[39m:38:27
+[33m  36 |      <AuthContext.Provider value={{ user, loading, loginUser, logoutUser, registerUser }}>
+  37 |        {children}
+  38 |      </AuthContext.Provider>
+     |                             ^
+  39 |    );
+  40 |  };[39m
+[2m8:07:38 a. m.[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/www/Optimización-de-Proyectos-con-IA/frontend/src/context/AuthContext.js[39m:38:27
+[33m  36 |      <AuthContext.Provider value={{ user, loading, loginUser, logoutUser, registerUser }}>
+  37 |        {children}
+  38 |      </AuthContext.Provider>
+     |                             ^
+  39 |    );
+  40 |  };[39m
+[2m8:07:41 a. m.[22m [31m[1m[vite][22m[39m [31mInternal server error: [postcss] It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.[39m
+  Plugin: [35mvite:css[39m
+  File: [36mC:/www/Optimización-de-Proyectos-con-IA/frontend/src/index.css[39m:undefined:NaN
+      at We (C:\www\Optimización-de-Proyectos-con-IA\frontend\node_modules\tailwindcss\dist\lib.js:35:2121)
+      at LazyResult.runOnRoot (C:\www\Optimización-de-Proyectos-con-IA\frontend\node_modules\postcss\lib\lazy-result.js:361:16)
+      at LazyResult.runAsync (C:\www\Optimización-de-Proyectos-con-IA\frontend\node_modules\postcss\lib\lazy-result.js:290:26)
+      at LazyResult.async (C:\www\Optimización-de-Proyectos-con-IA\frontend\node_modules\postcss\lib\lazy-result.js:192:30)
+      at LazyResult.then (C:\www\Optimización-de-Proyectos-con-IA\frontend\node_modules\postcss\lib\lazy-result.js:436:17)
+[2m8:07:42 a. m.[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/www/Optimización-de-Proyectos-con-IA/frontend/src/context/AuthContext.js[39m:38:27
+[33m  36 |      <AuthContext.Provider value={{ user, loading, loginUser, logoutUser, registerUser }}>
+  37 |        {children}
+  38 |      </AuthContext.Provider>
+     |                             ^
+  39 |    );
+  40 |  };[39m
+      at TransformPluginContext._formatLog (file:///C:/www/Optimizaci%C3%B3n-de-Proyectos-con-IA/frontend/node_modules/vite/dist/node/chunks/dep-BHkUv4Z8.js:31460:43)
+      at TransformPluginContext.error (file:///C:/www/Optimizaci%C3%B3n-de-Proyectos-con-IA/frontend/node_modules/vite/dist/node/chunks/dep-BHkUv4Z8.js:31457:14)
+      at TransformPluginContext.transform (file:///C:/www/Optimizaci%C3%B3n-de-Proyectos-con-IA/frontend/node_modules/vite/dist/node/chunks/dep-BHkUv4Z8.js:29962:10)
+      at async EnvironmentPluginContainer.transform (file:///C:/www/Optimizaci%C3%B3n-de-Proyectos-con-IA/frontend/node_modules/vite/dist/node/chunks/dep-BHkUv4Z8.js:31274:14)
+      at async loadAndTransform (file:///C:/www/Optimizaci%C3%B3n-de-Proyectos-con-IA/frontend/node_modules/vite/dist/node/chunks/dep-BHkUv4Z8.js:26451:26)
+      at async viteTransformMiddleware (file:///C:/www/Optimizaci%C3%B3n-de-Proyectos-con-IA/frontend/node_modules/vite/dist/node/chunks/dep-BHkUv4Z8.js:27536:20)
+[2m8:07:44 a. m.[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "./context/AuthContext" from "src/components/ProtectedRoute.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/www/Optimización-de-Proyectos-con-IA/frontend/src/components/ProtectedRoute.jsx[39m:3:24
+[33m  18 |  import React from "react";
+  19 |  import { Navigate, Outlet } from "react-router-dom";
+  20 |  import { useAuth } from "./context/AuthContext";
+     |                           ^
+  21 |  const ProtectedRoute = () => {
+  22 |    _s();[39m
+      at TransformPluginContext._formatLog (file:///C:/www/Optimizaci%C3%B3n-de-Proyectos-con-IA/frontend/node_modules/vite/dist/node/chunks/dep-BHkUv4Z8.js:31460:43)
+      at TransformPluginContext.error (file:///C:/www/Optimizaci%C3%B3n-de-Proyectos-con-IA/frontend/node_modules/vite/dist/node/chunks/dep-BHkUv4Z8.js:31457:14)
+      at normalizeUrl (file:///C:/www/Optimizaci%C3%B3n-de-Proyectos-con-IA/frontend/node_modules/vite/dist/node/chunks/dep-BHkUv4Z8.js:29999:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///C:/www/Optimizaci%C3%B3n-de-Proyectos-con-IA/frontend/node_modules/vite/dist/node/chunks/dep-BHkUv4Z8.js:30057:32
+      at async Promise.all (index 5)
+      at async TransformPluginContext.transform (file:///C:/www/Optimizaci%C3%B3n-de-Proyectos-con-IA/frontend/node_modules/vite/dist/node/chunks/dep-BHkUv4Z8.js:30025:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/www/Optimizaci%C3%B3n-de-Proyectos-con-IA/frontend/node_modules/vite/dist/node/chunks/dep-BHkUv4Z8.js:31274:14)
+      at async loadAndTransform (file:///C:/www/Optimizaci%C3%B3n-de-Proyectos-con-IA/frontend/node_modules/vite/dist/node/chunks/dep-BHkUv4Z8.js:26451:26)
+      at async viteTransformMiddleware (file:///C:/www/Optimizaci%C3%B3n-de-Proyectos-con-IA/frontend/node_modules/vite/dist/node/chunks/dep-BHkUv4Z8.js:27536:20)
+[2m8:07:44 a. m.[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "./context/AuthContext" from "src/components/Layout.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/www/Optimización-de-Proyectos-con-IA/frontend/src/components/Layout.jsx[39m:3:24
+[33m  18 |  import React from "react";
+  19 |  import { Outlet } from "react-router-dom";
+  20 |  import { useAuth } from "./context/AuthContext";
+     |                           ^
+  21 |  const Layout = () => {
+  22 |    _s();[39m
+      at TransformPluginContext._formatLog (file:///C:/www/Optimizaci%C3%B3n-de-Proyectos-con-IA/frontend/node_modules/vite/dist/node/chunks/dep-BHkUv4Z8.js:31460:43)
+      at TransformPluginContext.error (file:///C:/www/Optimizaci%C3%B3n-de-Proyectos-con-IA/frontend/node_modules/vite/dist/node/chunks/dep-BHkUv4Z8.js:31457:14)
+      at normalizeUrl (file:///C:/www/Optimizaci%C3%B3n-de-Proyectos-con-IA/frontend/node_modules/vite/dist/node/chunks/dep-BHkUv4Z8.js:29999:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///C:/www/Optimizaci%C3%B3n-de-Proyectos-con-IA/frontend/node_modules/vite/dist/node/chunks/dep-BHkUv4Z8.js:30057:32
+      at async Promise.all (index 5)
+      at async TransformPluginContext.transform (file:///C:/www/Optimizaci%C3%B3n-de-Proyectos-con-IA/frontend/node_modules/vite/dist/node/chunks/dep-BHkUv4Z8.js:30025:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/www/Optimizaci%C3%B3n-de-Proyectos-con-IA/frontend/node_modules/vite/dist/node/chunks/dep-BHkUv4Z8.js:31274:14)
+      at async loadAndTransform (file:///C:/www/Optimizaci%C3%B3n-de-Proyectos-con-IA/frontend/node_modules/vite/dist/node/chunks/dep-BHkUv4Z8.js:26451:26)
+      at async viteTransformMiddleware (file:///C:/www/Optimizaci%C3%B3n-de-Proyectos-con-IA/frontend/node_modules/vite/dist/node/chunks/dep-BHkUv4Z8.js:27536:20)
