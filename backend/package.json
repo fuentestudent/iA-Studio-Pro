@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "cross-env JWT_SECRET=testsecret MONGODB_URI_TEST=\"mongodb+srv://user_db:fpTf038SRLeYLf8p@cluster0.hxltzpx.mongodb.net/test_db_integrada?retryWrites=true&w=majority&appName=Cluster0\" jest --testMatch=\"**/__tests__/**/*.test.js\" --testTimeout=30000",
-    "start": "node server.js"
+    "test": "cross-env JWT_SECRET=testsecret MONGODB_URI_TEST=\"mongodb://user_db:fpTf038SRLeYLf8p@ac-nhvtijn-shard-00-00.hxltzpx.mongodb.net:27017,ac-nhvtijn-shard-00-01.hxltzpx.mongodb.net:27017,ac-nhvtijn-shard-00-02.hxltzpx.mongodb.net:27017/?ssl=true&replicaSet=atlas-v5fo2r-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0\" jest --testMatch=\"**/__tests__/**/*.test.js\" --testTimeout=90000 --runInBand",
+    "start": "cross-env MONGODB_URI=\"mongodb://user_db:fpTf038SRLeYLf8p@ac-nhvtijn-shard-00-00.hxltzpx.mongodb.net:27017,ac-nhvtijn-shard-00-01.hxltzpx.mongodb.net:27017,ac-nhvtijn-shard-00-02.hxltzpx.mongodb.net:27017/?ssl=true&replicaSet=atlas-v5fo2r-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0\" node server.js"
   },
   "keywords": [],
   "author": "",

@@ -33,7 +33,7 @@ Esta plataforma no solo aborda la optimización de prompts, sino que también se
 
 ## 5. Prueba Documental
 
-Este documento, junto con el historial de commits en el repositorio de Git, los archivos de configuración y la documentación técnica, sirve como prueba irrefutable del desarrollo intelectual y el trabajo en equipo realizado.
+Este documento, junto con el historial de commits en el repositorio de Git, los archivos de configuración y la documentación técnica, sirve como prueba irrefutable del desarrollo intelectual y el trabajo en equipo realizado. Es fundamental recordar que toda la información de desarrollo, incluyendo detalles técnicos, configuraciones y procesos internos, es de naturaleza confidencial y está destinada exclusivamente para uso interno del proyecto, no debiendo ser expuesta públicamente.
 
 ---
 
