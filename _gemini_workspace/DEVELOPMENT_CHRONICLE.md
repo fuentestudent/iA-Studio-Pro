@@ -29,3 +29,23 @@ El proyecto está ahora en la **Fase 6: Sincronización Frontend-Backend**. El o
 1.  Configurar las variables de entorno del frontend para apuntar al backend.
 2.  Verificar la conexión API entre frontend y backend.
 3.  Integrar rutas y componentes para la interacción completa de la aplicación.
+
+## 6 de Agosto de 2025
+
+### Decisión Clave: Priorizar Docker para Estabilizar el Entorno
+
+*   **Contexto:** Tras revisar el documento fundacional "iA Studio Pro_ Ingeniería de Software en iA.pdf", se identificó que la estrategia original del proyecto incluía el uso de Docker para la contenerización de todos los componentes (frontend, backend, base de datos) y orquestación con Docker Compose/Kubernetes.
+*   **Problema Identificado:** La omisión de esta implementación de Docker ha sido un factor clave en los retrasos y problemas de entorno (ej. errores de conexión a MongoDB, inconsistencias de dependencias) experimentados hasta ahora.
+*   **Redefinición de Estrategia:** Se ha decidido priorizar la implementación de Docker para el entorno de desarrollo como un paso fundamental para asegurar la reproducibilidad, estabilidad y eficiencia del proceso de desarrollo, antes de continuar con la integración directa del frontend.
+*   **Plan de Implementación de Docker:**
+    *   Creación de `Dockerfile.backend` para el servicio del backend.
+    *   Creación de `docker-compose.yml` para orquestar el backend y MongoDB.
+    *   Ajuste de la `MONGODB_URI` en el backend para apuntar al servicio de MongoDB dentro de Docker Compose.
+*   **Estado:** En progreso.
+
+### Problema: Fallo al Levantar Servicios Docker
+
+*   **Síntoma:** El comando `docker-compose up --build -d` falló con el error `unable to get image 'mongo:latest': error during connect: El sistema no puede encontrar el archivo especificado.`
+*   **Diagnóstico:** Este error indica que Docker Compose no pudo conectarse al demonio de Docker (Docker Desktop en Windows) para descargar la imagen de MongoDB. Las causas comunes incluyen que Docker Desktop no esté corriendo, no esté configurado correctamente, o problemas de permisos.
+*   **Acción Requerida:** Verificar que Docker Desktop esté iniciado y funcionando correctamente, y si es necesario, reiniciarlo o revisar su configuración.
+*   **Estado:** Pendiente de resolución (requiere intervención manual del usuario).

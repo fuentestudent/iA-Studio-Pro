@@ -85,3 +85,17 @@ Este documento registra las interacciones clave, decisiones y progreso del proye
     - Se generó el primer "Informe de Progreso" del proyecto "INTEGRADA" (29 de julio de 2025).
     - Se actualizó `REPORTING_PROTOCOL.md` para incluir la sección sobre el "Protocolo de Informe de Progreso".
 - **Estado Actual:** Se ha implementado una metodología clara para el seguimiento del progreso del proyecto, y se ha generado el primer informe de estado.
+
+### 8 de agosto de 2025 - Plan de Acción Fundacional: Contenerización con Docker
+
+- **Contexto:** Tras resolver un bloqueo crítico del Subsistema de Windows para Linux (WSL) que impedía el funcionamiento de Docker Desktop, se establece un plan de acción formal para la puesta en marcha del entorno de desarrollo contenedorizado.
+- **Decisión:** Se define la correcta implementación de Docker como un prerrequisito fundamental antes de continuar con la Fase 6 (Sincronización Frontend-Backend), para asegurar un entorno de desarrollo y despliegue estable, reproducible y aislado.
+- **Plan de Acción Establecido:**
+    1.  **Diagnóstico Inicial:** Confirmado que Docker no se iniciaba debido a un problema de WSL. (Completado)
+    2.  **Acción Correctiva:** Ejecución de `wsl --shutdown` para desbloquear el subsistema. (Completado)
+    3.  **Verificación Manual:** El usuario reinició Docker Desktop y confirmó su estado "running". (Completado)
+    4.  **Verificación Técnica (Pendiente):** Ejecutar `docker info` para confirmar que la API de Docker responde.
+    5.  **Puesta en Marcha del Entorno (Pendiente):** Ejecutar `docker-compose up --build -d` para construir y levantar los contenedores.
+    6.  **Verificación de Contenedores (Pendiente):** Ejecutar `docker ps` para verificar que los contenedores están en funcionamiento.
+    7.  **Pruebas Funcionales (Pendiente):** Realizar pruebas de conectividad entre el frontend y el backend dentro de la red de Docker.
+- **Estado Actual:** El plan está formalizado. Los siguientes pasos son la ejecución de las verificaciones técnicas y la puesta en marcha del entorno Docker.
