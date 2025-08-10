@@ -44,8 +44,11 @@ exports.gemini = async (req, res) => {
   if (!prompt) {
     return res.status(400).json({ error: 'Prompt is required' });
   }
+  
   try {
-    const result = await callLLM('Gemini', prompt);
+    // Sanitizar el prompt para prevenir errores de web_fetch
+    const sanitizedPrompt = prompt.replace(/https?:\/\/[^\s]+/g, '[URL_REMOVED]');
+    const result = await callLLM('Gemini', sanitizedPrompt);
     res.json(result);
   } catch (error) {
     console.error(`Error calling Gemini: ${error.message}`);
