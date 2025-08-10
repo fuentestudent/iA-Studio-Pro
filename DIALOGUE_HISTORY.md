@@ -2,6 +2,18 @@
 
 Este documento registra las interacciones clave, decisiones y progreso del proyecto 'INTEGRADA' (anteriormente 'Optimización de Proyectos con IA').
 
+### 8 de agosto de 2025 - Transición a Entorno de Desarrollo en la Nube
+
+- **Problema Crítico:** Se identificó una inestabilidad persistente en Docker Desktop, causada por un mal funcionamiento del Subsistema de Windows para Linux (WSL), impidiendo el avance en la contenerización del proyecto.
+- **Decisión Estratégica:** Para superar el bloqueo y continuar con el desarrollo, se decidió migrar temporalmente a un entorno de desarrollo basado en la nube que ofrezca soporte nativo para Docker.
+- **Acciones de Sincronización:**
+    1.  Se verificó que el directorio local del proyecto no estaba correctamente inicializado como un repositorio Git, a pesar de la existencia de documentación que indicaba lo contrario.
+    2.  Se localizó la URL del repositorio remoto oficial (`https://github.com/fuentestudent/Optimizacion-de-Proyectos-con-IA.git`) buscando en los archivos de registro y documentación.
+    3.  Se re-inicializó el repositorio local y se conectó con el remoto.
+    4.  Se añadieron y confirmaron todos los cambios locales pendientes, incluyendo archivos no rastreados.
+    5.  Se subieron todos los cambios al repositorio remoto, sincronizando completamente el estado del proyecto.
+- **Próximos Pasos:** Iniciar el proyecto en un entorno de desarrollo en la nube (GitHub Codespaces) para continuar con la Fase 5.5 (Contenerización y Entorno) desde una plataforma estable.
+
 ### 29 de julio de 2025 - Decisión Estratégica y Licenciamiento
 
 - **Discusión Estratégica:** Se abordó la preocupación sobre la naturaleza pública del repositorio y el riesgo de que la propiedad intelectual fuera utilizada por terceros.

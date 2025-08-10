@@ -41,3 +41,15 @@ Este documento detalla el progreso del desarrollo de la plataforma "Optimizació
 - **Optimización:** Optimizar el rendimiento del frontend y del backend.
 - **Testing:** Ampliar la cobertura de pruebas del frontend y del backend.
 - **CI/CD:** Implementar un pipeline de integración y despliegue continuo.
+
+---
+
+### 9 de agosto de 2025: Configuración de Entorno para Codespaces
+
+- **Objetivo:** Cambiar el flujo de trabajo de Docker local a GitHub Codespaces para estandarizar el entorno de desarrollo.
+- **Progreso:**
+    - Se intentó gestionar Codespaces con la CLI de GitHub (`gh`), pero se detectó que no estaba instalada.
+    - Múltiples intentos de instalación automática (`winget`, `choco`) fallaron por no estar disponibles en el sistema.
+    - El usuario procedió con la instalación manual del archivo `.msi` de la CLI de GitHub.
+- **Estado:** En pausa. La instalación de `gh` se completó, pero la sesión de terminal actual no reconoce el comando.
+- **Próximo paso:** El usuario debe reiniciar la terminal. Tras el reinicio, se verificará la instalación de `gh` y se procederá con la conexión al Codespace.

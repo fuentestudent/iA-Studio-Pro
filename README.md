@@ -27,6 +27,48 @@ Desde la conceptualización de ideas hasta el despliegue, INTEGRADA proporciona 
 *   **Contenedores:** Docker
 *   **Despliegue:** Netlify/Vercel (Frontend), Docker Swarm/Kubernetes (Backend)
 
+## Puesta en Marcha (Docker)
+
+Este proyecto está completamente contenedorizado, por lo que solo necesitas Docker y Docker Compose para levantarlo.
+
+### Prerrequisitos
+
+*   [Docker](https://www.docker.com/get-started) instalado y en ejecución.
+
+### Pasos
+
+1.  **Clona el repositorio:**
+    ```sh
+    git clone https://github.com/fuentestudent/Optimizacion-de-Proyectos-con-IA.git
+    cd Optimización-de-Proyectos-con-IA
+    ```
+
+2.  **Crea el archivo de variables de entorno:**
+    Crea un archivo llamado `.env` en la raíz del proyecto. Este archivo es crucial para la conexión a la base de datos y la seguridad.
+
+3.  **Añade las siguientes variables al archivo `.env`:**
+    Reemplaza los valores de ejemplo con tus propias credenciales.
+
+    ```env
+    # URL de conexión de MongoDB Atlas
+    MONGODB_URI=mongodb+srv://<usuario>:<password>@<cluster-url>/<database-name>?retryWrites=true&w=majority
+
+    # Secreto para firmar los JSON Web Tokens (JWT)
+    JWT_SECRET=tu_secreto_super_secreto_aqui
+    ```
+
+4.  **Construye y levanta los contenedores:**
+    Este comando construirá las imágenes de Docker para el frontend y el backend, y luego iniciará todos los servicios en segundo plano.
+    ```sh
+    docker-compose up --build -d
+    ```
+
+5.  **¡Listo!**
+    *   **Frontend:** Debería estar accesible en `http://localhost:3000`.
+    *   **Backend:** Debería estar accesible en `http://localhost:5000`.
+
+Para detener todos los servicios, puedes ejecutar `docker-compose down` desde la raíz del proyecto.
+
 ## Desempeño Técnico y Colaboración
 
 Este proyecto es el resultado de una colaboración técnica profunda y eficiente, donde cada fase de desarrollo ha sido abordada con un enfoque metódico y orientado a la calidad.
