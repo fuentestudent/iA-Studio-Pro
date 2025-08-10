@@ -1,9 +1,11 @@
 import axios from 'axios';
 
-const API_URL = '/api'; // Proxy will handle the full URL
+// Use environment variable for the backend URL.
+// The VITE_API_URL should be the base address, e.g., 'http://localhost:5000'
+const BACKEND_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 
 const apiClient = axios.create({
-  baseURL: API_URL,
+  baseURL: `${BACKEND_URL}/api`, // Construct the full base URL with /api
 });
 
 // Interceptor to add the auth token to every request
