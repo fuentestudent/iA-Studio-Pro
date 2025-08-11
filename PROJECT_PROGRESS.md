@@ -72,3 +72,19 @@ Este documento detalla el progreso del desarrollo de la plataforma "Optimizació
 - **Desempeño del Usuario:** La persistencia y la acción directa del usuario al ejecutar `git pull` fueron fundamentales para resolver el problema de sincronización del Codespace y desbloquear el avance del proyecto. Su capacidad para diagnosticar y aplicar la solución necesaria fue clave.
 - **Estado:** El proyecto activo está completamente sincronizado con la última versión, y el entorno de Codespaces está listo para levantar la aplicación.
 - **Próximo paso:** Iniciar la aplicación con `docker-compose up --build -d` en el Codespace.
+
+---
+
+### 10 de agosto de 2025: Errores de Construcción del Frontend y Soluciones Propuestas
+
+- **Objetivo:** Diagnosticar y proponer soluciones para los errores que impiden la construcción exitosa del frontend en el entorno de Docker/Codespaces.
+- **Problemas Identificados y Soluciones Propuestas:**
+    1.  **Problema:** Error de configuración de PostCSS/Tailwind CSS (`ReferenceError: module is not defined in ES module scope`).
+        *   **Archivos Asociados:** `frontend/postcss.config.js`
+        *   **Diagnóstico:** El archivo `postcss.config.js` está siendo tratado como un módulo ES (debido a `"type": "module"` en `package.json`), pero utiliza la sintaxis de CommonJS (`module.exports` o implícitamente `module`).
+        *   **Solución Propuesta:** Renombrar `frontend/postcss.config.js` a `frontend/postcss.config.cjs`. Esto fuerza a Node.js a tratarlo como un módulo CommonJS.
+    2.  **Problema:** Errores de TypeScript/JSX (`TS6133`, `TS7016: Could not find a declaration file for module...`).
+        *   **Archivos Asociados:** `frontend/src/App.tsx`, `frontend/src/pages/LoginPage.jsx`, `frontend/src/src/pages/RegisterPage.jsx`, `frontend/src/components/Dashboard.jsx`, `frontend/src/components/ProtectedRoute.jsx`, `frontend/src/components/Layout.jsx`, `frontend/src/context/AuthContext.js`, `frontend/src/context/ThemeContext.jsx`, `frontend/src/i18n.js`, `frontend/tsconfig.app.json`.
+        *   **Diagnóstico:** TypeScript no está configurado para procesar archivos JavaScript (`.js` y `.jsx`) como parte de la compilación, lo que causa errores al importar estos archivos en componentes TypeScript (`.tsx`).
+        *   **Solución Propuesta:** Añadir `"allowJs": true` a la sección `compilerOptions` en `frontend/tsconfig.app.json`. Esto permite a TypeScript inferir tipos de archivos JavaScript.
+- **Estado:** Los problemas han sido identificados y las soluciones propuestas. La implementación de estas soluciones es el próximo paso para resolver los errores de construcción del frontend.

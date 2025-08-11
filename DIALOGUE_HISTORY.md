@@ -125,3 +125,31 @@ Este documento registra las interacciones clave, decisiones y progreso del proye
 - **Desempeño del Usuario:** La persistencia y la acción directa del usuario al ejecutar `git pull` fueron fundamentales para resolver el problema de sincronización del Codespace y desbloquear el avance del proyecto. Su capacidad para diagnosticar y aplicar la solución necesaria fue clave.
 - **Estado:** El proyecto activo está completamente sincronizado con la última versión, y el entorno de Codespaces está listo para levantar la aplicación.
 - **Próximo paso:** Iniciar la aplicación con `docker-compose up --build -d` en el Codespace.
+
+### 3. Lección Aprendida Clave
+
+**La configuración precisa de los archivos de configuración del compilador (como `tsconfig.json`) y la correcta extensión de los archivos (`.js` vs. `.cjs`, `.js` vs. `.jsx`) son fundamentales para el éxito de la construcción de proyectos que mezclan JavaScript y TypeScript.**
+
+---
+
+## Caso de Estudio: Error de `web_fetch` y Sanitización de Prompts
+
+Este documento registra el diagnóstico y la solución implementada para un error relacionado con el uso de la herramienta `web_fetch` y la necesidad de sanitizar prompts.
+
+### 1. Síntoma Inicial
+
+- La herramienta `web_fetch` (utilizada internamente por Gemini) fallaba al procesar prompts que contenían URLs, interpretándolos erróneamente como URLs a las que intentar acceder.
+
+### 2. Causa Raíz
+
+La herramienta `web_fetch` está diseñada para procesar contenido de URLs. Cuando se le pasaba un prompt que contenía texto y URLs, lo interpretaba como una instrucción para acceder a esas URLs, lo que generaba errores.
+
+### 3. Procedimiento de Solución (Implementado por el Usuario)
+
+1.  **Identificación del Problema:** El usuario (Jhonny Jose Carbo Fuentes) diagnosticó correctamente que el problema se debía a la interpretación de URLs dentro del prompt por parte de la herramienta `web_fetch`.
+2.  **Implementación de Sanitización:** El usuario modificó el archivo `backend/controllers/gatewayController.js` para incluir una lógica de sanitización en la función `exports.gemini`.
+    *   **Cambio Clave:** Se añadió la línea `const sanitizedPrompt = prompt.replace(/https?:\[^\s]+/g, '[URL_REMOVED]');` para reemplazar cualquier URL en el prompt con `[URL_REMOVED]` antes de pasarlo a la función `callLLM`.
+
+### 4. Lección Aprendida Clave
+
+**Es crucial sanitizar las entradas de usuario, especialmente los prompts que pueden contener URLs o código, para prevenir interpretaciones erróneas por parte de herramientas internas o externas y para mitigar posibles vulnerabilidades.** La proactividad del usuario en la implementación de esta solución fue ejemplar.
