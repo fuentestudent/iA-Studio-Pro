@@ -1,6 +1,6 @@
-# Resumen del Estado del Proyecto INTEGRADA
+# Resumen del Estado del Proyecto iA Studio Pro
 
-Este archivo sirve como el punto de entrada rápido para entender el estado actual del proyecto 'Optimización de Proyectos con IA' (INTEGRADA).
+Este archivo sirve como el punto de entrada rápido para entender el estado actual del proyecto 'Optimización de Proyectos con IA' (iA Studio Pro).
 
 ## Documentación General del Proyecto:
 
