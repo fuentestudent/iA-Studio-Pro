@@ -1,12 +1,12 @@
-## INTEGRADA: Plataforma de Optimización para Proyectos con IA
+## iA Studio Pro: Es una Plataforma de Optimización y Desarrollo para Proyectos con iA
 
 ![Banner del Proyecto](URL_DEL_BANNER)  <!-- Opcional: Añadir un banner visualmente atractivo -->
 
 ## Descripción General
 
-**INTEGRADA** es una plataforma web de vanguardia, diseñada para revolucionar la forma en que los desarrolladores, equipos de trabajo gestionan y optimizan proyectos con inteligencia artificial. Impulsada por una arquitectura robusta y un diseño intuitivo, INTEGRADA integra de forma inteligente múltiples modelos de lenguaje de gran tamaño (LLM) y ofrece un conjunto de herramientas avanzadas para mejorar la eficiencia, la calidad y la velocidad en todo el ciclo de vida del desarrollo de proyectos con la IA.
+**iA Studio Pro** es una plataforma web de vanguardia, diseñada para revolucionar la forma en que los desarrolladores, equipos de trabajo gestionan y optimizan proyectos con inteligencia artificial. Impulsada por una arquitectura robusta y un diseño intuitivo, iA Studio Pro integra de forma inteligente múltiples modelos de lenguaje de gran tamaño (LLM) y ofrece un conjunto de herramientas avanzadas para mejorar la eficiencia, la calidad y la velocidad en todo el ciclo de vida del desarrollo de proyectos con la IA.
 
-Desde la conceptualización de ideas hasta el despliegue, INTEGRADA proporciona una solución integral que combina la potencia de la IA con una gestión de proyectos eficaz, permitiendo a los usuarios maximizar el potencial de sus implementaciones y conceptos de proyectos con la inteligencia artificial.
+Desde la conceptualización de ideas hasta el despliegue, iA Studio Pro proporciona una solución integral que combina la potencia de la IA con una gestión de proyectos eficaz, permitiendo a los usuarios maximizar el potencial de sus implementaciones y conceptos de proyectos con la inteligencia artificial.
 
 ## Características Principales
 
@@ -74,7 +74,7 @@ Para detener todos los servicios, puedes ejecutar `docker-compose down` desde la
 Este proyecto es el resultado de una colaboración técnica profunda y eficiente, donde cada fase de desarrollo ha sido abordada con un enfoque metódico y orientado a la calidad.
 
 *   **Jhonny José Carbó Fuentes:** Como Director, Arquitecto de Software y visionario del proyecto, ha proporcionado la dirección estratégica, la conceptualización de las funcionalidades clave y la guía arquitectónica, asegurando que la plataforma cumpla con las necesidades del usuario y los estándares de la industria.
-*   **Gemini (IA de Google):** Como desarrollador principal e implementador técnico, he traducido la visión y los requisitos en una solución funcional y escalable. Mi contribución abarca desde la configuración del entorno y la arquitectura base, hasta la implementación de los sistemas de autenticación, gestión de proyectos, el gateway de LLM y el editor de código integrado. La colaboración ha sido iterativa, con un enfoque constante en la optimización del código, la modularidad y la preparación para futuras expansiones.
+*   **Gemini (IA de Google) y Qwen iA:** Como desarrolladores principal e implementador técnico, he traducido la visión y los requisitos en una solución funcional y escalable. Mi contribución abarca desde la configuración del entorno y la arquitectura base, hasta la implementación de los sistemas de autenticación, gestión de proyectos, el gateway de LLM y el editor de código integrado. La colaboración ha sido iterativa, con un enfoque constante en la optimización del código, la modularidad y la preparación para futuras expansiones.
 
 Para más detalles sobre la propiedad intelectual y los roles, consulta el archivo `PROPIEDAD_INTELECTUAL.md`.
 
@@ -84,7 +84,7 @@ Actualmente, el proyecto ha completado las **Fases 0 a 4** y se encuentra en la 
 
 ## Mockups del Dashboard
 
-A continuación, se presentan los mockups visuales del dashboard de INTEGRADA, mostrando el diseño propuesto en español e inglés. El diseño es **limpio, profesional y moderno**, con un **sidebar oscuro** que incluye el logo INTEGRADA y opciones de navegación ("Dashboard", "Proyectos", "Configuración", "Cerrar sesión").
+A continuación, se presentan los mockups visuales del dashboard de iA Studio Pro, mostrando el diseño propuesto en español e inglés. El diseño es **limpio, profesional y moderno**, con un **sidebar oscuro** que incluye el logo iA Studio Pro y opciones de navegación ("Dashboard", "Proyectos", "Configuración", "Cerrar sesión").
 
 El **panel principal** presenta métricas clave ("Proyectos Totales", "Usuarios Activos", "Tiempo de Respuesta" con una pequeña gráfica), una sección de "Chat" con espacio para mensajes, una sección "Método de Optimización" con las etapas numeradas ("1 Deconstruir", "2 Diagnosticar", "3 Desarrollar", "4 Entregar"), un panel de código con sintaxis JavaScript (ej. función `optimize`), y una sección "Optimizando Proyectos IA" con un botón "Comenzar".
 
