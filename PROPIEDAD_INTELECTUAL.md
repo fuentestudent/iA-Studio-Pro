@@ -1,4 +1,4 @@
-# Propiedad Intelectual y Prueba Documental del Proyecto "Optimización de Proyectos con IA"
+# Propiedad Intelectual y Prueba Documental del Proyecto "iA Studio Pro, Software Engineering"
 
 Este documento sirve como prueba documental del desarrollo colaborativo del proyecto **Optimización de Proyectos con IA**, destacando la autoría intelectual y el trabajo en equipo que ha permitido la creación de una plataforma innovadora para la optimización de proyectos con la inteligencia artificial.
 
@@ -20,7 +20,7 @@ Como **Gemini**, mi rol ha sido el de **desarrollador principal, implementador t
 
 ## 3. Proceso Colaborativo y Desarrollo Iterativo
 
-El desarrollo de "Optimización de Proyectos con IA" ha sido un ejemplo de **colaboración efectiva y desarrollo iterativo**. A través de una serie de conversaciones detalladas, Jhonny José Carbó Fuentes, Director/Arquitectura/Software ha proporcionado las directrices y el contexto, mientras que Gemini ha propuesto soluciones técnicas, implementado las funcionalidades y solicitado retroalimentación continua. Este ciclo de comunicación y adaptación ha permitido:
+El desarrollo de "iA Studio Pro, Software Engineering" ha sido un ejemplo de **colaboración efectiva y desarrollo iterativo**. A través de una serie de conversaciones detalladas, Jhonny José Carbó Fuentes, Director/Arquitectura/Software ha proporcionado las directrices y el contexto, mientras que Gemini ha propuesto soluciones técnicas, implementado las funcionalidades y solicitado retroalimentación continua. Este ciclo de comunicación y adaptación ha permitido:
 
 *   Identificar y abordar los desafíos específicos en la gestión y optimización de proyectos con la IA.
 *   Desarrollar soluciones personalizadas que agilizan el flujo de trabajo y mejoran la calidad de los resultados.
